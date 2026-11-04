@@ -1,0 +1,4124 @@
+(kicad_sch
+(version 20260306)
+(generator "eeschema")
+(generator_version "10.0")
+(uuid 868f19cb-b342-446a-9562-22327f25c295)
+(paper "A4")
+(title_block (title "Strain gauge CAN node") (comment 1 "Gain 201, ratiometric ADC on +3.3VA, 1.65 V at zero strain"))
+(lib_symbols
+(symbol "Amplifier_Instrumentation:INA333xxDRG"
+		(pin_names
+			(offset 0.127)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at 3.81 3.175 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "INA333xxDRG"
+			(at 3.81 -3.175 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SON:WSON-8-1EP_3x3mm_P0.5mm_EP1.45x2.4mm"
+			(at 0 -7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina333.pdf"
+			(at 2.54 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Zero Drift, Micropower Instrumentation Amplifier G = 1 + 100kOhm/Rg, WSON-8"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "instrumentation opamp amplifier"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "WSON*3x3mm*P0.5mm*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "INA333xxDRG_0_1"
+			(polyline
+				(pts
+					(xy 7.62 0) (xy -5.08 6.35) (xy -5.08 -6.35) (xy 7.62 0)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "INA333xxDRG_1_1"
+			(pin passive line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "Rg"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 -5.08 0)
+				(length 2.54)
+				(name "-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 5.08 0)
+				(length 2.54)
+				(name "+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 3.81)
+				(name "V-"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 2.54 7.62 270)
+				(length 5.08)
+				(name "Ref"
+					(effects
+						(font
+							(size 0.9906 0.9906)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin output line
+				(at 10.16 0 180)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 3.81)
+				(name "V+"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -7.62 -2.54 0)
+				(length 2.54)
+				(name "Rg"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 2.54 -7.62 90)
+				(length 5.08)
+				(name "EP"
+					(effects
+						(font
+							(size 0.9906 0.9906)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Regulator_Linear:TLV70033_WSON6"
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -3.81 5.715 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TLV70033_WSON6"
+			(at 0 5.715 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SON:WSON-6_1.5x1.5mm_P0.5mm"
+			(at 0 8.255 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv700.pdf"
+			(at 0 1.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "200mA Low Dropout Voltage Regulator, Fixed Output 3.3V, WSON6"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "200mA LDO Regulator Fixed Positive"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "WSON*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "TLV70033_WSON6_0_1"
+			(rectangle
+				(start -5.08 4.445)
+				(end 5.08 -5.08)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "TLV70033_WSON6_1_1"
+			(pin power_in line
+				(at -7.62 2.54 0)
+				(length 2.54)
+				(name "IN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -7.62 90)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_out line
+				(at 7.62 2.54 180)
+				(length 2.54)
+				(name "OUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at 7.62 0 180)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -2.54 -5.08 90)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -7.62 0 0)
+				(length 2.54)
+				(name "EN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Device:R"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "R"
+			(at 2.032 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "R"
+			(at 0 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "R res resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "R_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Device:C"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0.254)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "C"
+			(at 0.635 2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "C"
+			(at 0.635 -2.54 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0.9652 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "cap capacitor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "C_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "C_0_1"
+			(polyline
+				(pts
+					(xy -2.032 0.762) (xy 2.032 0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -0.762) (xy 2.032 -0.762)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "C_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.794)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Device:R_Variable"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "R"
+			(at 2.54 -2.54 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Variable"
+			(at -2.54 -1.27 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Variable resistor"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "R res resistor variable potentiometer rheostat"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "R_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "R_Variable_0_1"
+			(rectangle
+				(start -1.016 -2.54)
+				(end 1.016 2.54)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.54 1.524) (xy 2.54 2.54) (xy 1.524 2.54) (xy 2.54 2.54) (xy -2.032 -2.032)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "R_Variable_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Connector_Generic:Conn_01x04"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04"
+			(at 0 -7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Conn_01x04_1_1"
+			(rectangle
+				(start -1.27 3.81)
+				(end 1.27 -6.35)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -4.953)
+				(end 0 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 3.81)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "MCU_ST_STM32U5:STM32U575CITx"
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -12.7 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STM32U575CITx"
+			(at 7.62 39.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm"
+			(at -12.7 -38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32u575ci.pdf"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "STMicroelectronics Arm Cortex-M33 MCU, 2048KB flash, 786KB RAM, 160 MHz, 1.71-3.6V, 37 GPIO, LQFP48"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "Arm Cortex-M33 STM32U5 STM32U575/585"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "LQFP*7x7mm*P0.5mm*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "STM32U575CITx_0_1"
+			(rectangle
+				(start -12.7 -38.1)
+				(end 12.7 38.1)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+		)
+		(symbol "STM32U575CITx_1_1"
+			(pin power_in line
+				(at -5.08 40.64 270)
+				(length 2.54)
+				(name "VBAT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 17.78 0)
+				(length 2.54)
+				(name "PC13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "PWR_WKUP2" bidirectional line)
+				(alternate "RTC_OUT1" bidirectional line)
+				(alternate "RTC_TS" bidirectional line)
+				(alternate "TAMP_IN1" bidirectional line)
+				(alternate "TAMP_OUT2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -15.24 15.24 0)
+				(length 2.54)
+				(name "PC14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "RCC_OSC32_IN" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -15.24 12.7 0)
+				(length 2.54)
+				(name "PC15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_EXTI15" bidirectional line)
+				(alternate "ADC4_EXTI15" bidirectional line)
+				(alternate "RCC_OSC32_OUT" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -15.24 27.94 0)
+				(length 2.54)
+				(name "PH0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "RCC_OSC_IN" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -15.24 25.4 0)
+				(length 2.54)
+				(name "PH1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "RCC_OSC_OUT" bidirectional line)
+			)
+			(pin input line
+				(at -15.24 33.02 0)
+				(length 2.54)
+				(name "NRST"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 -40.64 90)
+				(length 2.54)
+				(name "VSSA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 5.08 40.64 270)
+				(length 2.54)
+				(name "VDDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 33.02 180)
+				(length 2.54)
+				(name "PA0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN5" bidirectional line)
+				(alternate "AUDIOCLK" bidirectional line)
+				(alternate "OCTOSPIM_P2_NCS" bidirectional line)
+				(alternate "OPAMP1_VINP" bidirectional line)
+				(alternate "PWR_WKUP1" bidirectional line)
+				(alternate "SPI3_RDY" bidirectional line)
+				(alternate "TAMP_IN2" bidirectional line)
+				(alternate "TAMP_OUT1" bidirectional line)
+				(alternate "TIM2_CH1" bidirectional line)
+				(alternate "TIM2_ETR" bidirectional line)
+				(alternate "TIM5_CH1" bidirectional line)
+				(alternate "TIM8_ETR" bidirectional line)
+				(alternate "UART4_TX" bidirectional line)
+				(alternate "USART2_CTS" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 15.24 30.48 180)
+				(length 2.54)
+				(name "PA1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN6" bidirectional line)
+				(alternate "I2C1_SMBA" bidirectional line)
+				(alternate "LPTIM1_CH2" bidirectional line)
+				(alternate "OCTOSPIM_P1_DQS" bidirectional line)
+				(alternate "OPAMP1_VINM" bidirectional line)
+				(alternate "PWR_WKUP3" bidirectional line)
+				(alternate "SPI1_SCK" bidirectional line)
+				(alternate "TAMP_IN5" bidirectional line)
+				(alternate "TAMP_OUT4" bidirectional line)
+				(alternate "TIM15_CH1N" bidirectional line)
+				(alternate "TIM2_CH2" bidirectional line)
+				(alternate "TIM5_CH2" bidirectional line)
+				(alternate "UART4_RX" bidirectional line)
+				(alternate "USART2_DE" bidirectional line)
+				(alternate "USART2_RTS" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 15.24 27.94 180)
+				(length 2.54)
+				(name "PA2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN7" bidirectional line)
+				(alternate "COMP1_INP" bidirectional line)
+				(alternate "LPUART1_TX" bidirectional line)
+				(alternate "OCTOSPIM_P1_NCS" bidirectional line)
+				(alternate "PWR_WKUP4" bidirectional line)
+				(alternate "RCC_LSCO" bidirectional line)
+				(alternate "SPI1_RDY" bidirectional line)
+				(alternate "TIM15_CH1" bidirectional line)
+				(alternate "TIM2_CH3" bidirectional line)
+				(alternate "TIM5_CH3" bidirectional line)
+				(alternate "UCPD1_FRSTX1" bidirectional line)
+				(alternate "USART2_TX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 15.24 25.4 180)
+				(length 2.54)
+				(name "PA3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN8" bidirectional line)
+				(alternate "LPUART1_RX" bidirectional line)
+				(alternate "OCTOSPIM_P1_CLK" bidirectional line)
+				(alternate "OPAMP1_VOUT" bidirectional line)
+				(alternate "PWR_WKUP5" bidirectional line)
+				(alternate "SAI1_CK1" bidirectional line)
+				(alternate "SAI1_MCLK_A" bidirectional line)
+				(alternate "TIM15_CH2" bidirectional line)
+				(alternate "TIM2_CH4" bidirectional line)
+				(alternate "TIM5_CH4" bidirectional line)
+				(alternate "USART2_RX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 15.24 22.86 180)
+				(length 2.54)
+				(name "PA4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN9" bidirectional line)
+				(alternate "ADC4_IN9" bidirectional line)
+				(alternate "DAC1_OUT1" bidirectional line)
+				(alternate "LPTIM2_CH1" bidirectional line)
+				(alternate "OCTOSPIM_P1_NCS" bidirectional line)
+				(alternate "PWR_WKUP2" bidirectional line)
+				(alternate "SAI1_FS_B" bidirectional line)
+				(alternate "SPI1_NSS" bidirectional line)
+				(alternate "SPI3_NSS" bidirectional line)
+				(alternate "USART2_CK" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 15.24 20.32 180)
+				(length 2.54)
+				(name "PA5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN10" bidirectional line)
+				(alternate "ADC4_IN10" bidirectional line)
+				(alternate "DAC1_OUT2" bidirectional line)
+				(alternate "LPTIM2_ETR" bidirectional line)
+				(alternate "PWR_CSLEEP" bidirectional line)
+				(alternate "PWR_WKUP6" bidirectional line)
+				(alternate "SPI1_SCK" bidirectional line)
+				(alternate "TIM2_CH1" bidirectional line)
+				(alternate "TIM2_ETR" bidirectional line)
+				(alternate "TIM8_CH1N" bidirectional line)
+				(alternate "USART3_RX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 15.24 17.78 180)
+				(length 2.54)
+				(name "PA6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "16"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN11" bidirectional line)
+				(alternate "ADC4_IN11" bidirectional line)
+				(alternate "LPUART1_CTS" bidirectional line)
+				(alternate "OCTOSPIM_P1_IO3" bidirectional line)
+				(alternate "OPAMP2_VINP" bidirectional line)
+				(alternate "PWR_CDSTOP" bidirectional line)
+				(alternate "PWR_WKUP7" bidirectional line)
+				(alternate "SPI1_MISO" bidirectional line)
+				(alternate "TIM16_CH1" bidirectional line)
+				(alternate "TIM1_BKIN" bidirectional line)
+				(alternate "TIM3_CH1" bidirectional line)
+				(alternate "TIM8_BKIN" bidirectional line)
+				(alternate "USART3_CTS" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 15.24 15.24 180)
+				(length 2.54)
+				(name "PA7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN12" bidirectional line)
+				(alternate "ADC4_IN20" bidirectional line)
+				(alternate "I2C3_SCL" bidirectional line)
+				(alternate "LPTIM2_CH2" bidirectional line)
+				(alternate "OCTOSPIM_P1_IO2" bidirectional line)
+				(alternate "OPAMP2_VINM" bidirectional line)
+				(alternate "PWR_SRDSTOP" bidirectional line)
+				(alternate "PWR_WKUP8" bidirectional line)
+				(alternate "SPI1_MOSI" bidirectional line)
+				(alternate "TIM17_CH1" bidirectional line)
+				(alternate "TIM1_CH1N" bidirectional line)
+				(alternate "TIM3_CH2" bidirectional line)
+				(alternate "TIM8_CH1N" bidirectional line)
+				(alternate "USART3_TX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -15.24 7.62 0)
+				(length 2.54)
+				(name "PB0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN15" bidirectional line)
+				(alternate "ADC4_IN18" bidirectional line)
+				(alternate "AUDIOCLK" bidirectional line)
+				(alternate "COMP1_OUT" bidirectional line)
+				(alternate "LPTIM3_CH1" bidirectional line)
+				(alternate "OCTOSPIM_P1_IO1" bidirectional line)
+				(alternate "OPAMP2_VOUT" bidirectional line)
+				(alternate "SPI1_NSS" bidirectional line)
+				(alternate "TIM1_CH2N" bidirectional line)
+				(alternate "TIM3_CH3" bidirectional line)
+				(alternate "TIM8_CH2N" bidirectional line)
+				(alternate "USART3_CK" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -15.24 5.08 0)
+				(length 2.54)
+				(name "PB1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "19"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN16" bidirectional line)
+				(alternate "ADC4_IN19" bidirectional line)
+				(alternate "COMP1_INM" bidirectional line)
+				(alternate "LPTIM2_IN1" bidirectional line)
+				(alternate "LPTIM3_CH2" bidirectional line)
+				(alternate "LPUART1_DE" bidirectional line)
+				(alternate "LPUART1_RTS" bidirectional line)
+				(alternate "MDF1_SDI0" bidirectional line)
+				(alternate "OCTOSPIM_P1_IO0" bidirectional line)
+				(alternate "PWR_WKUP4" bidirectional line)
+				(alternate "TIM1_CH3N" bidirectional line)
+				(alternate "TIM3_CH4" bidirectional line)
+				(alternate "TIM8_CH3N" bidirectional line)
+				(alternate "USART3_DE" bidirectional line)
+				(alternate "USART3_RTS" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -15.24 2.54 0)
+				(length 2.54)
+				(name "PB2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_IN17" bidirectional line)
+				(alternate "COMP1_INP" bidirectional line)
+				(alternate "I2C3_SMBA" bidirectional line)
+				(alternate "LPTIM1_CH1" bidirectional line)
+				(alternate "MDF1_CKI0" bidirectional line)
+				(alternate "OCTOSPIM_P1_DQS" bidirectional line)
+				(alternate "PWR_WKUP1" bidirectional line)
+				(alternate "RTC_OUT2" bidirectional line)
+				(alternate "SPI1_RDY" bidirectional line)
+				(alternate "TIM8_CH4N" bidirectional line)
+				(alternate "UCPD1_FRSTX1" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -15.24 -17.78 0)
+				(length 2.54)
+				(name "PB10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "21"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "COMP1_OUT" bidirectional line)
+				(alternate "I2C2_SCL" bidirectional line)
+				(alternate "I2C4_SCL" bidirectional line)
+				(alternate "LPTIM3_CH1" bidirectional line)
+				(alternate "LPUART1_RX" bidirectional line)
+				(alternate "OCTOSPIM_P1_CLK" bidirectional line)
+				(alternate "PWR_WKUP8" bidirectional line)
+				(alternate "SAI1_SCK_A" bidirectional line)
+				(alternate "SPI2_SCK" bidirectional line)
+				(alternate "TIM2_CH3" bidirectional line)
+				(alternate "TSC_SYNC" bidirectional line)
+				(alternate "USART3_TX" bidirectional line)
+			)
+			(pin power_out line
+				(at -15.24 -33.02 0)
+				(length 2.54)
+				(name "VCAP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 -40.64 90)
+				(length 2.54)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -2.54 40.64 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 -20.32 0)
+				(length 2.54)
+				(name "PB12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "25"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C2_SMBA" bidirectional line)
+				(alternate "LPUART1_DE" bidirectional line)
+				(alternate "LPUART1_RTS" bidirectional line)
+				(alternate "MDF1_SDI1" bidirectional line)
+				(alternate "OCTOSPIM_P1_NCLK" bidirectional line)
+				(alternate "SPI2_NSS" bidirectional line)
+				(alternate "TIM15_BKIN" bidirectional line)
+				(alternate "TIM1_BKIN" bidirectional line)
+				(alternate "TSC_G1_IO1" bidirectional line)
+				(alternate "USART3_CK" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -15.24 -22.86 0)
+				(length 2.54)
+				(name "PB13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "26"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C2_SCL" bidirectional line)
+				(alternate "LPTIM3_IN1" bidirectional line)
+				(alternate "LPUART1_CTS" bidirectional line)
+				(alternate "MDF1_CKI1" bidirectional line)
+				(alternate "SPI2_SCK" bidirectional line)
+				(alternate "TIM15_CH1N" bidirectional line)
+				(alternate "TIM1_CH1N" bidirectional line)
+				(alternate "TSC_G1_IO2" bidirectional line)
+				(alternate "USART3_CTS" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -15.24 -25.4 0)
+				(length 2.54)
+				(name "PB14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "27"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "I2C2_SDA" bidirectional line)
+				(alternate "LPTIM3_ETR" bidirectional line)
+				(alternate "MDF1_SDI2" bidirectional line)
+				(alternate "SPI2_MISO" bidirectional line)
+				(alternate "TIM15_CH1" bidirectional line)
+				(alternate "TIM1_CH2N" bidirectional line)
+				(alternate "TIM8_CH2N" bidirectional line)
+				(alternate "TSC_G1_IO3" bidirectional line)
+				(alternate "UCPD1_DBCC2" bidirectional line)
+				(alternate "USART3_DE" bidirectional line)
+				(alternate "USART3_RTS" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -15.24 -27.94 0)
+				(length 2.54)
+				(name "PB15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "28"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_EXTI15" bidirectional line)
+				(alternate "ADC4_EXTI15" bidirectional line)
+				(alternate "LPTIM2_IN2" bidirectional line)
+				(alternate "MDF1_CKI2" bidirectional line)
+				(alternate "PWR_WKUP7" bidirectional line)
+				(alternate "RTC_REFIN" bidirectional line)
+				(alternate "SPI2_MOSI" bidirectional line)
+				(alternate "TIM15_CH2" bidirectional line)
+				(alternate "TIM1_CH3N" bidirectional line)
+				(alternate "TIM8_CH3N" bidirectional line)
+				(alternate "UCPD1_CC2" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 15.24 12.7 180)
+				(length 2.54)
+				(name "PA8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "29"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "DEBUG_TRACECLK" bidirectional line)
+				(alternate "LPTIM2_CH1" bidirectional line)
+				(alternate "RCC_MCO" bidirectional line)
+				(alternate "SAI1_CK2" bidirectional line)
+				(alternate "SAI1_SCK_A" bidirectional line)
+				(alternate "SPI1_RDY" bidirectional line)
+				(alternate "TIM1_CH1" bidirectional line)
+				(alternate "USART1_CK" bidirectional line)
+				(alternate "USB_OTG_FS_SOF" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 15.24 10.16 180)
+				(length 2.54)
+				(name "PA9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "30"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "DAC1_EXTI9" bidirectional line)
+				(alternate "SAI1_FS_A" bidirectional line)
+				(alternate "SPI2_SCK" bidirectional line)
+				(alternate "TIM15_BKIN" bidirectional line)
+				(alternate "TIM1_CH2" bidirectional line)
+				(alternate "USART1_TX" bidirectional line)
+				(alternate "USB_OTG_FS_VBUS" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 15.24 7.62 180)
+				(length 2.54)
+				(name "PA10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "31"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "CRS_SYNC" bidirectional line)
+				(alternate "LPTIM2_IN2" bidirectional line)
+				(alternate "SAI1_D1" bidirectional line)
+				(alternate "SAI1_SD_A" bidirectional line)
+				(alternate "TIM17_BKIN" bidirectional line)
+				(alternate "TIM1_CH3" bidirectional line)
+				(alternate "USART1_RX" bidirectional line)
+				(alternate "USB_OTG_FS_ID" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 15.24 5.08 180)
+				(length 2.54)
+				(name "PA11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "32"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_EXTI11" bidirectional line)
+				(alternate "FDCAN1_RX" bidirectional line)
+				(alternate "SPI1_MISO" bidirectional line)
+				(alternate "TIM1_BKIN2" bidirectional line)
+				(alternate "TIM1_CH4" bidirectional line)
+				(alternate "USART1_CTS" bidirectional line)
+				(alternate "USB_OTG_FS_DM" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 15.24 2.54 180)
+				(length 2.54)
+				(name "PA12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "33"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FDCAN1_TX" bidirectional line)
+				(alternate "OCTOSPIM_P2_NCS" bidirectional line)
+				(alternate "SPI1_MOSI" bidirectional line)
+				(alternate "TIM1_ETR" bidirectional line)
+				(alternate "USART1_DE" bidirectional line)
+				(alternate "USART1_RTS" bidirectional line)
+				(alternate "USB_OTG_FS_DP" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 15.24 0 180)
+				(length 2.54)
+				(name "PA13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "34"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "DEBUG_JTMS-SWDIO" bidirectional line)
+				(alternate "IR_OUT" bidirectional line)
+				(alternate "SAI1_SD_B" bidirectional line)
+				(alternate "USB_OTG_FS_NOE" bidirectional line)
+			)
+			(pin passive line
+				(at 0 -40.64 90)
+				(length 2.54)
+				(hide yes)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "35"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 40.64 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "36"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 15.24 -2.54 180)
+				(length 2.54)
+				(name "PA14"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "37"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "DEBUG_JTCK-SWCLK" bidirectional line)
+				(alternate "I2C1_SMBA" bidirectional line)
+				(alternate "I2C4_SMBA" bidirectional line)
+				(alternate "LPTIM1_CH1" bidirectional line)
+				(alternate "SAI1_FS_B" bidirectional line)
+				(alternate "USB_OTG_FS_SOF" bidirectional line)
+			)
+			(pin bidirectional line
+				(at 15.24 -5.08 180)
+				(length 2.54)
+				(name "PA15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "38"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADC1_EXTI15" bidirectional line)
+				(alternate "ADC4_EXTI15" bidirectional line)
+				(alternate "DEBUG_JTDI" bidirectional line)
+				(alternate "SPI1_NSS" bidirectional line)
+				(alternate "SPI3_NSS" bidirectional line)
+				(alternate "TIM2_CH1" bidirectional line)
+				(alternate "TIM2_ETR" bidirectional line)
+				(alternate "UART4_DE" bidirectional line)
+				(alternate "UART4_RTS" bidirectional line)
+				(alternate "UCPD1_CC1" bidirectional line)
+				(alternate "USART2_RX" bidirectional line)
+				(alternate "USART3_DE" bidirectional line)
+				(alternate "USART3_RTS" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -15.24 0 0)
+				(length 2.54)
+				(name "PB3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "39"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADF1_CCK0" bidirectional line)
+				(alternate "COMP2_INM" bidirectional line)
+				(alternate "CRS_SYNC" bidirectional line)
+				(alternate "DEBUG_JTDO-SWO" bidirectional line)
+				(alternate "I2C1_SDA" bidirectional line)
+				(alternate "LPTIM1_CH1" bidirectional line)
+				(alternate "SAI1_SCK_B" bidirectional line)
+				(alternate "SPI1_SCK" bidirectional line)
+				(alternate "SPI3_SCK" bidirectional line)
+				(alternate "TIM2_CH2" bidirectional line)
+				(alternate "USART1_DE" bidirectional line)
+				(alternate "USART1_RTS" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -15.24 -2.54 0)
+				(length 2.54)
+				(name "PB4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "40"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "ADF1_SDI0" bidirectional line)
+				(alternate "COMP2_INP" bidirectional line)
+				(alternate "DEBUG_JTRST" bidirectional line)
+				(alternate "I2C3_SDA" bidirectional line)
+				(alternate "LPTIM1_CH2" bidirectional line)
+				(alternate "SAI1_MCLK_B" bidirectional line)
+				(alternate "SPI1_MISO" bidirectional line)
+				(alternate "SPI3_MISO" bidirectional line)
+				(alternate "TIM17_BKIN" bidirectional line)
+				(alternate "TIM3_CH1" bidirectional line)
+				(alternate "TSC_G2_IO1" bidirectional line)
+				(alternate "USART1_CTS" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -15.24 -5.08 0)
+				(length 2.54)
+				(name "PB5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "41"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "COMP2_OUT" bidirectional line)
+				(alternate "I2C1_SMBA" bidirectional line)
+				(alternate "LPTIM1_IN1" bidirectional line)
+				(alternate "OCTOSPIM_P1_NCLK" bidirectional line)
+				(alternate "PWR_WKUP6" bidirectional line)
+				(alternate "SAI1_SD_B" bidirectional line)
+				(alternate "SPI1_MOSI" bidirectional line)
+				(alternate "SPI3_MOSI" bidirectional line)
+				(alternate "TIM16_BKIN" bidirectional line)
+				(alternate "TIM3_CH2" bidirectional line)
+				(alternate "TSC_G2_IO2" bidirectional line)
+				(alternate "UCPD1_DBCC1" bidirectional line)
+				(alternate "USART1_CK" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -15.24 -7.62 0)
+				(length 2.54)
+				(name "PB6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "42"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "COMP2_INP" bidirectional line)
+				(alternate "I2C1_SCL" bidirectional line)
+				(alternate "I2C4_SCL" bidirectional line)
+				(alternate "LPTIM1_ETR" bidirectional line)
+				(alternate "MDF1_SDI5" bidirectional line)
+				(alternate "PWR_WKUP3" bidirectional line)
+				(alternate "SAI1_FS_B" bidirectional line)
+				(alternate "TIM16_CH1N" bidirectional line)
+				(alternate "TIM4_CH1" bidirectional line)
+				(alternate "TIM8_BKIN2" bidirectional line)
+				(alternate "TSC_G2_IO3" bidirectional line)
+				(alternate "USART1_TX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -15.24 -10.16 0)
+				(length 2.54)
+				(name "PB7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "43"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "COMP2_INM" bidirectional line)
+				(alternate "I2C1_SDA" bidirectional line)
+				(alternate "I2C4_SDA" bidirectional line)
+				(alternate "LPTIM1_IN2" bidirectional line)
+				(alternate "MDF1_CKI5" bidirectional line)
+				(alternate "PWR_PVD_IN" bidirectional line)
+				(alternate "PWR_WKUP4" bidirectional line)
+				(alternate "TIM17_CH1N" bidirectional line)
+				(alternate "TIM4_CH2" bidirectional line)
+				(alternate "TIM8_BKIN" bidirectional line)
+				(alternate "TSC_G2_IO4" bidirectional line)
+				(alternate "UART4_CTS" bidirectional line)
+				(alternate "USART1_RX" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -15.24 22.86 0)
+				(length 2.54)
+				(name "PH3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "44"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -15.24 -12.7 0)
+				(length 2.54)
+				(name "PB8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "45"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "FDCAN1_RX" bidirectional line)
+				(alternate "I2C1_SCL" bidirectional line)
+				(alternate "MDF1_CCK0" bidirectional line)
+				(alternate "PWR_WKUP5" bidirectional line)
+				(alternate "SAI1_CK1" bidirectional line)
+				(alternate "SAI1_MCLK_A" bidirectional line)
+				(alternate "SPI3_RDY" bidirectional line)
+				(alternate "TIM16_CH1" bidirectional line)
+				(alternate "TIM4_CH3" bidirectional line)
+			)
+			(pin bidirectional line
+				(at -15.24 -15.24 0)
+				(length 2.54)
+				(name "PB9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "46"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(alternate "DAC1_EXTI9" bidirectional line)
+				(alternate "FDCAN1_TX" bidirectional line)
+				(alternate "I2C1_SDA" bidirectional line)
+				(alternate "IR_OUT" bidirectional line)
+				(alternate "SAI1_D2" bidirectional line)
+				(alternate "SAI1_FS_A" bidirectional line)
+				(alternate "SPI2_NSS" bidirectional line)
+				(alternate "TIM17_CH1" bidirectional line)
+				(alternate "TIM4_CH4" bidirectional line)
+			)
+			(pin passive line
+				(at 0 -40.64 90)
+				(length 2.54)
+				(hide yes)
+				(name "VSS"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "47"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 2.54 40.64 270)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "48"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Device:Crystal_GND24"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "Y"
+			(at 3.175 5.08 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Crystal_GND24"
+			(at 3.175 3.175 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Four pin crystal, GND on pins 2 and 4"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S3.3" "The rectangle is not a symbol body but a graphical element"
+			(at 0 -12.7 0)
+			(show_name yes)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property private "KLC_S4.1" "Some pins are on 50mil grid to make the symbol small"
+			(at 0 -15.24 0)
+			(show_name yes)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "quartz ceramic resonator oscillator"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Crystal*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Crystal_GND24_0_1"
+			(polyline
+				(pts
+					(xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 0) (xy -2.032 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.54 -2.286) (xy -2.54 -3.556) (xy 2.54 -3.556) (xy 2.54 -2.286)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy -2.032 -1.27) (xy -2.032 1.27)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.143 2.54)
+				(end 1.143 -2.54)
+				(stroke
+					(width 0.3048)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -3.81) (xy 0 -3.556)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.032 0) (xy 2.54 0)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.032 -1.27) (xy 2.032 1.27)
+				)
+				(stroke
+					(width 0.508)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "Crystal_GND24_1_1"
+			(pin passive line
+				(at -3.81 0 0)
+				(length 1.27)
+				(name "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -5.08 90)
+				(length 1.27)
+				(name "G"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 3.81 0 180)
+				(length 1.27)
+				(name "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -5.08 90)
+				(length 1.27)
+				(hide yes)
+				(name "G"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Device:FerriteBead"
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "FB"
+			(at -3.81 0.635 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "FerriteBead"
+			(at 3.81 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -1.778 0 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Ferrite bead"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "L ferrite bead inductor filter"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "FerriteBead_0_1"
+			(polyline
+				(pts
+					(xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 1.27) (xy 0 1.2954)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 -1.27) (xy 0 -1.2192)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "FerriteBead_1_1"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 2.54)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "Connector_Generic:Conn_01x05"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "J"
+			(at 0 7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x05"
+			(at 0 -7.62 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "connector"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "Conn_01x05_1_1"
+			(rectangle
+				(start -1.27 6.35)
+				(end 1.27 -6.35)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type background)
+				)
+			)
+			(rectangle
+				(start -1.27 5.207)
+				(end 0 4.953)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 2.667)
+				(end 0 2.413)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 0.127)
+				(end 0 -0.127)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -2.413)
+				(end 0 -2.667)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(rectangle
+				(start -1.27 -4.953)
+				(end 0 -5.207)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(pin passive line
+				(at -5.08 5.08 0)
+				(length 3.81)
+				(name "Pin_1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 2.54 0)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 0 0)
+				(length 3.81)
+				(name "Pin_3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -2.54 0)
+				(length 3.81)
+				(name "Pin_4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at -5.08 -5.08 0)
+				(length 3.81)
+				(name "Pin_5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "power:+3.3VA"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#PWR"
+			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3.3VA"
+			(at 0 3.556 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3VA\""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "+3.3VA_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0.762 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "+3.3VA_1_1"
+			(pin power_in line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "power:+5V"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#PWR"
+			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 0 3.556 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "+5V_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0.762 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "+5V_1_1"
+			(pin power_in line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "power:+3V3"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#PWR"
+			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 0 3.556 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "+3V3_0_1"
+			(polyline
+				(pts
+					(xy -0.762 1.27) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 2.54) (xy 0.762 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 2.54)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "+3V3_1_1"
+			(pin power_in line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "power:GND"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#PWR"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 0 -3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "global power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "GND_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "GND_1_1"
+			(pin power_in line
+				(at 0 0 270)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "power:PWR_FLAG"
+		(power global)
+		(pin_numbers
+			(hide yes)
+		)
+		(pin_names
+			(offset 0)
+			(hide yes)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "#FLG"
+			(at 0 1.905 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 0 3.81 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "flag power"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_0"
+			(pin power_out line
+				(at 0 0 90)
+				(length 0)
+				(name ""
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "PWR_FLAG_0_1"
+			(polyline
+				(pts
+					(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+				)
+				(stroke
+					(width 0)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
+(symbol "StrainGauge:TJA1441A" (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes)
+(property "Reference" "U" (at -7.62 10.16 0) (effects (font (size 1.27 1.27))))
+(property "Value" "TJA1441A" (at 5.08 10.16 0) (effects (font (size 1.27 1.27))))
+(property "Footprint" "" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/TJA1441.pdf" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+(property "Description" "CAN FD transceiver with VIO" (at 0 0 0) (hide yes) (effects (font (size 1.27 1.27))))
+(symbol "TJA1441A_0_1" (rectangle (start -10.16 7.62) (end 10.16 -7.62) (stroke (width 0.254) (type default)) (fill (type background))))
+(symbol "TJA1441A_1_1"
+(pin input line (at -12.7 3.81 0) (length 2.54) (name "TXD" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27)))))
+(pin output line (at -12.7 1.27 0) (length 2.54) (name "RXD" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27)))))
+(pin input line (at -12.7 -3.81 0) (length 2.54) (name "S" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27)))))
+(pin bidirectional line (at 12.7 2.54 180) (length 2.54) (name "CANH" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27)))))
+(pin bidirectional line (at 12.7 -2.54 180) (length 2.54) (name "CANL" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27)))))
+(pin power_in line (at -2.54 10.16 270) (length 2.54) (name "VCC" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27)))))
+(pin power_in line (at 2.54 10.16 270) (length 2.54) (name "VIO" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))
+(pin power_in line (at -2.54 -10.16 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27)))))
+(pin passive line (at 2.54 -10.16 90) (length 2.54) (name "EP" (effects (font (size 1.27 1.27)))) (number "9" (effects (font (size 1.27 1.27)))))))
+)
+(text "Power and CAN" (exclude_from_sim no) (at 27.94 38.1 0) (effects (font (size 1.8 1.8) (bold yes)) (justify left bottom)) (uuid 918acb2f-c5e0-4374-91d8-0cfd974e39f4))
+(symbol (lib_id "Connector_Generic:Conn_01x04") (at 40.64 50.8 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 2c4b5572-3e3d-4c72-8d43-52228e50be94) (property "Reference" "J1" (at 40.64 45.72 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "5 V / CAN" (at 40.64 59.69 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "StrainGauge:BusPads_1x04" (at 40.64 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 40.64 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 40.64 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 8c3176f8-161e-4d38-99fa-520cfda63fca)) (pin "2" (uuid 16fc343d-ffdc-45bd-ab16-b6dbd8c43388)) (pin "3" (uuid 1dcec426-8627-48f1-bdfd-abc1927214be)) (pin "4" (uuid a1522552-49b8-40a7-b05c-7068e52b5ea9)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "J1") (unit 1)))))
+(text "1 +5V\n2 CANH\n3 CANL\n4 GND" (exclude_from_sim no) (at 44.45 55.88 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid f8300cca-e0b4-4c9a-959f-22649716a1d4))
+(wire (pts (xy 35.56 48.26) (xy 30.48 48.26)) (stroke (width 0) (type default)) (uuid 9bc43704-a130-46f9-946a-346c0028d17c))
+(wire (pts (xy 30.48 48.26) (xy 30.48 45.72)) (stroke (width 0) (type default)) (uuid d39335a9-1ec8-4785-a03a-b6bd6b298788))
+(symbol (lib_id "power:+5V") (at 30.48 45.72 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 36e4c5e6-0177-4c52-8780-1b859e8a0945) (property "Reference" "#PWR01" (at 30.48 39.37 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+5V" (at 30.48 41.91 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 30.48 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 30.48 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 30.48 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 4b311a5f-e743-41a0-b454-2f16d9a00fb1)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR01") (unit 1)))))
+(wire (pts (xy 35.56 50.8) (xy 30.48 50.8)) (stroke (width 0) (type default)) (uuid d59c826a-bc41-4e29-a2d9-1adb32f51a7d))
+(label "CANH" (at 30.48 50.8 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid aae28d43-89e5-470f-a1bb-d7be5519618e))
+(wire (pts (xy 35.56 53.34) (xy 30.48 53.34)) (stroke (width 0) (type default)) (uuid bb6bad28-54c5-405f-8f75-d90d8ff910b4))
+(label "CANL" (at 30.48 53.34 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid f3a351b3-be15-4beb-b7be-6aceb1073cbb))
+(wire (pts (xy 35.56 55.88) (xy 30.48 55.88)) (stroke (width 0) (type default)) (uuid 91e453ba-ac28-46a6-a5c1-5cf193aef2dd))
+(wire (pts (xy 30.48 55.88) (xy 30.48 58.42)) (stroke (width 0) (type default)) (uuid 95771b3d-f913-4d32-bfd9-b5b8ba62de4a))
+(symbol (lib_id "power:GND") (at 30.48 58.42 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 7c14b0a4-3e85-4191-bd39-a995adaa29bb) (property "Reference" "#PWR02" (at 30.48 64.77 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 30.48 62.23 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 30.48 58.42 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 30.48 58.42 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 30.48 58.42 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 7075a6c7-1fef-440a-b408-8427ddcbfd0c)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR02") (unit 1)))))
+(wire (pts (xy 30.48 48.26) (xy 25.4 48.26)) (stroke (width 0) (type default)) (uuid a864e021-4d48-40df-8ab2-1c124866e4bc))
+(wire (pts (xy 25.4 48.26) (xy 25.4 45.72)) (stroke (width 0) (type default)) (uuid 09a82d41-3c3d-4e23-b5b7-3164d62f5388))
+(junction (at 30.48 48.26) (diameter 0) (color 0 0 0 0) (uuid c6d46bfc-9ebf-4393-a2bf-70c83aed122a))
+(symbol (lib_id "power:PWR_FLAG") (at 25.4 45.72 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid a5f023d0-5928-4eed-8552-68db826808be) (property "Reference" "#FLG03" (at 25.4 39.37 0) (show_name no) (do_not_autoplace no) (hide yes) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "PWR_FLAG" (at 25.4 41.91 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 25.4 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 25.4 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 25.4 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 683d3236-10f0-410d-8009-827715edeeb4)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#FLG03") (unit 1)))))
+(wire (pts (xy 30.48 55.88) (xy 22.86 55.88)) (stroke (width 0) (type default)) (uuid fd4fa012-26e7-4bf9-90a0-5352dd9d405a))
+(wire (pts (xy 22.86 55.88) (xy 22.86 58.42)) (stroke (width 0) (type default)) (uuid 6a2a809e-2ead-44d1-b0b4-3f671b8bc0da))
+(junction (at 30.48 55.88) (diameter 0) (color 0 0 0 0) (uuid d756a4d3-8506-4118-9c6e-f97b481d2b58))
+(symbol (lib_id "power:PWR_FLAG") (at 22.86 58.42 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 8eb5c025-9691-4757-8ca4-8180391504da) (property "Reference" "#FLG04" (at 22.86 52.07 0) (show_name no) (do_not_autoplace no) (hide yes) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "PWR_FLAG" (at 22.86 54.61 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 22.86 58.42 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 22.86 58.42 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 22.86 58.42 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 7a0901a8-fc27-41b4-b46f-8bde36394c27)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#FLG04") (unit 1)))))
+(wire (pts (xy 22.86 58.42) (xy 22.86 60.96)) (stroke (width 0) (type default)) (uuid b489e24d-55c2-413e-a8b9-e38ea780939b))
+(symbol (lib_id "power:GND") (at 22.86 60.96 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 38216a64-59c6-480e-84ae-57aade6179d0) (property "Reference" "#PWR05" (at 22.86 67.31 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 22.86 64.77 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 22.86 60.96 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 22.86 60.96 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 22.86 60.96 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 92c69635-a243-4146-96b5-2a0495750978)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR05") (unit 1)))))
+(symbol (lib_id "Regulator_Linear:TLV70033_WSON6") (at 76.2 50.8 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 6074101a-25e5-410c-b69b-2bccfd9540dc) (property "Reference" "U1" (at 71.12 45.085 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "TLV70033DSE" (at 76.2 45.085 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Package_SON:WSON-6_1.5x1.5mm_P0.5mm" (at 76.2 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv700.pdf" (at 76.2 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 76.2 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 063713a4-7f90-45f8-ab52-c1738402740d)) (pin "2" (uuid 2f2176ac-fb10-42d0-bb44-c16c6caa2bf4)) (pin "3" (uuid c6051025-21ae-4acc-a4a3-d5d048317913)) (pin "4" (uuid e8b66bf0-f07a-4d2c-bde6-9ac6742b82ae)) (pin "5" (uuid 533dc34e-562f-4f58-bd49-3d2df40df18a)) (pin "6" (uuid f2785d3b-7afa-4d9a-baa6-b07394aa0dc6)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "U1") (unit 1)))))
+(symbol (lib_id "power:+5V") (at 60.96 45.72 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 13bf41e8-82a8-4f06-96a1-af431246ffe4) (property "Reference" "#PWR06" (at 60.96 39.37 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+5V" (at 60.96 41.91 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 60.96 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 60.96 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 60.96 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 1a6cc531-05c1-464f-9fc0-7e6529c73a79)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR06") (unit 1)))))
+(wire (pts (xy 60.96 45.72) (xy 60.96 49.53)) (stroke (width 0) (type default)) (uuid c4042f07-0b72-4e15-a7ab-c932622cee7d))
+(wire (pts (xy 60.96 48.26) (xy 68.58 48.26)) (stroke (width 0) (type default)) (uuid 0feda964-cc17-4cf6-9121-cafde40d56b9))
+(junction (at 60.96 48.26) (diameter 0) (color 0 0 0 0) (uuid aa20af66-a215-44e2-82e1-444b85056c1e))
+(wire (pts (xy 68.58 50.8) (xy 66.04 50.8)) (stroke (width 0) (type default)) (uuid 901976d1-cf03-4c9a-b67f-543c96e1adc0))
+(wire (pts (xy 66.04 50.8) (xy 66.04 48.26)) (stroke (width 0) (type default)) (uuid 19f73aab-1702-4d46-b489-f7f3c47c2998))
+(junction (at 66.04 48.26) (diameter 0) (color 0 0 0 0) (uuid 5b767031-171c-43a1-bf20-a6041c4e5b6f))
+(symbol (lib_id "Device:C") (at 60.96 53.34 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid a4170f74-8377-4df8-905b-d1eaf9be1dcd) (property "Reference" "C1" (at 63.5 52.07 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "1u 10V" (at 63.5 54.61 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 60.96 53.34 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 60.96 53.34 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 60.96 53.34 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 8193e170-f6a0-4574-98e0-b2b3a2629108)) (pin "2" (uuid d818261b-eda1-4705-813d-e33c2b9cd4f5)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "C1") (unit 1)))))
+(symbol (lib_id "power:GND") (at 60.96 57.15 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid e7c6b07c-dc11-4f5b-bd35-5f3592493178) (property "Reference" "#PWR07" (at 60.96 63.5 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 60.96 60.96 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 60.96 57.15 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 60.96 57.15 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 60.96 57.15 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid b4691be8-87ff-49c7-b384-5750872a1601)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR07") (unit 1)))))
+(symbol (lib_id "power:GND") (at 76.2 58.42 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid b7dd4f3a-448d-4d81-a461-6d1496a080da) (property "Reference" "#PWR08" (at 76.2 64.77 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 76.2 62.23 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 76.2 58.42 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 76.2 58.42 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 76.2 58.42 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 069b65ac-43a0-44b3-9fc6-f42134cb81df)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR08") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 91.44 45.72 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 170e45ba-0218-4100-b95d-bbb3588f833b) (property "Reference" "#PWR09" (at 91.44 39.37 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3V3" (at 91.44 41.91 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 91.44 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 91.44 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 91.44 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid f35dd062-e0d9-4650-9a22-1eb5509ab656)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR09") (unit 1)))))
+(wire (pts (xy 91.44 45.72) (xy 91.44 49.53)) (stroke (width 0) (type default)) (uuid 52d94b83-e151-4dcc-a322-3f80150a52c4))
+(wire (pts (xy 83.82 48.26) (xy 91.44 48.26)) (stroke (width 0) (type default)) (uuid 1b7c2dfc-6d28-48eb-8619-5d7cad04142f))
+(junction (at 91.44 48.26) (diameter 0) (color 0 0 0 0) (uuid 996be8cb-2b84-4717-b031-ec3f47f8b8dc))
+(symbol (lib_id "Device:C") (at 91.44 53.34 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 30d28f8f-fb4c-45ad-b01f-81ca2f837982) (property "Reference" "C2" (at 93.98 52.07 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "1u 10V" (at 93.98 54.61 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 91.44 53.34 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 91.44 53.34 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 91.44 53.34 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 16f16b71-3c22-4c8f-82b9-5b4f75bb246a)) (pin "2" (uuid 260b2bfc-273b-489a-84cf-d19e4b7e16ae)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "C2") (unit 1)))))
+(symbol (lib_id "power:GND") (at 91.44 57.15 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 264728e8-133a-4b97-b386-4b6fd715ce3b) (property "Reference" "#PWR10" (at 91.44 63.5 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 91.44 60.96 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 91.44 57.15 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 91.44 57.15 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 91.44 57.15 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 403cb924-e678-42a1-8a22-b38848673fea)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR10") (unit 1)))))
+(text "1.65 V output zero" (exclude_from_sim no) (at 101.6 38.1 0) (effects (font (size 1.8 1.8) (bold yes)) (justify left bottom)) (uuid 9e5ffecc-9f60-4414-9be9-8b3353d84d22))
+(symbol (lib_id "power:+3.3VA") (at 106.68 46.99 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 3dead022-5e07-49a4-a6a2-d8dd8192afb1) (property "Reference" "#PWR11" (at 106.68 40.64 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3.3VA" (at 106.68 43.18 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 106.68 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 106.68 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 106.68 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 34d94181-fbd7-4f3e-9d08-e2a10c2b5758)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR11") (unit 1)))))
+(symbol (lib_id "Device:R") (at 106.68 50.8 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 13765eff-bb98-4aea-8a28-a9af96fc765d) (property "Reference" "R2" (at 109.22 49.53 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "1k" (at 109.22 52.07 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Resistor_SMD:R_0201_0603Metric" (at 106.68 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 106.68 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 106.68 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid fd2f1f99-35e2-4865-8761-6b63bd643a6f)) (pin "2" (uuid 7eda1ac6-8907-4cf2-b387-832a8eac9273)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "R2") (unit 1)))))
+(wire (pts (xy 106.68 54.61) (xy 106.68 57.15)) (stroke (width 0) (type default)) (uuid 0ff4b252-5d5f-4c38-b546-1325cb262a8f))
+(junction (at 106.68 55.88) (diameter 0) (color 0 0 0 0) (uuid 15301d8a-b82a-4829-b8b1-9e90aaff71a7))
+(symbol (lib_id "Device:R") (at 106.68 60.96 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid c1e26d55-707e-425d-9db5-fa73cbe1b934) (property "Reference" "R3" (at 109.22 59.69 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "1k" (at 109.22 62.23 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Resistor_SMD:R_0201_0603Metric" (at 106.68 60.96 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 106.68 60.96 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 106.68 60.96 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 1b9c958a-9ff8-4fbd-9459-3a063400276d)) (pin "2" (uuid 276afacf-778a-4c97-92e4-6a5e91f3ec1a)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "R3") (unit 1)))))
+(symbol (lib_id "power:GND") (at 106.68 64.77 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 10f7090e-b8fe-4777-902e-9e9a122bfdac) (property "Reference" "#PWR12" (at 106.68 71.12 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 106.68 68.58 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 106.68 64.77 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 106.68 64.77 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 106.68 64.77 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 67ca493c-9112-4bd7-9193-73d8d0bb9fa5)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR12") (unit 1)))))
+(wire (pts (xy 106.68 55.88) (xy 119.38 55.88)) (stroke (width 0) (type default)) (uuid e10e1bfd-e222-4668-9a80-54f024812721))
+(junction (at 114.3 55.88) (diameter 0) (color 0 0 0 0) (uuid 75c18a84-6ae2-43b1-8aaf-9b921f0bb547))
+(wire (pts (xy 114.3 55.88) (xy 114.3 57.15)) (stroke (width 0) (type default)) (uuid ba922d3c-6c6b-434e-9a6d-0888ab91f595))
+(symbol (lib_id "Device:C") (at 114.3 60.96 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid e46750a6-b7ad-41db-b601-b41a4b464ff8) (property "Reference" "C4" (at 116.84 59.69 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 116.84 62.23 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (at 114.3 60.96 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 114.3 60.96 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 114.3 60.96 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid a590c0a3-da8a-489e-b3f1-a25d4d510e85)) (pin "2" (uuid b7606520-a13d-4c92-8d6d-f70b3bca13a8)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "C4") (unit 1)))))
+(symbol (lib_id "power:GND") (at 114.3 64.77 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 47750051-2898-43ee-a1af-a36610eeca3d) (property "Reference" "#PWR13" (at 114.3 71.12 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 114.3 68.58 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 114.3 64.77 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 114.3 64.77 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 114.3 64.77 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 4eebf75e-9fe5-49e1-9835-7f3808d786b9)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR13") (unit 1)))))
+(label "VREF" (at 119.38 55.88 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid c1382f75-ceab-429e-ab01-4264edbf61b2))
+(rectangle (start 35.56 80.01) (end 80.01 144.78) (stroke (width 0) (type dash)) (fill (type none)) (uuid 90712f5c-1c55-46f1-8e29-a6b840285cf2))
+(text "On the carbon rod (not on PCB)" (exclude_from_sim no) (at 38.1 85.09 0) (effects (font (size 1.8 1.8) (bold yes)) (justify left bottom)) (uuid 3835e9e3-6d29-498b-b629-842ac933d6a8))
+(text "Axial: SG1, SG3 (opposite sides of the rod)\nTransverse: SG2, SG4" (exclude_from_sim no) (at 38.1 142.24 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid be985281-8971-4c4e-ab46-1fac48df4090))
+(symbol (lib_id "Device:R_Variable") (at 45.72 104.14 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid a601d558-e532-4dd7-a73a-ecc3f7106e35) (property "Reference" "SG1" (at 42.545 102.87 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify right))) (property "Value" "350R axial" (at 42.545 105.41 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify right))) (property "Footprint" "" (at 45.72 104.14 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 45.72 104.14 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 45.72 104.14 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 88f0297a-60e3-4d70-a73d-3ecdb423b698)) (pin "2" (uuid 1abb7b53-f38d-4139-a4e3-f723929aae39)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "SG1") (unit 1)))))
+(symbol (lib_id "Device:R_Variable") (at 45.72 119.38 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid beab1ee5-cd53-483c-bad6-367fe230d14e) (property "Reference" "SG2" (at 42.545 118.11 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify right))) (property "Value" "350R transverse" (at 42.545 120.65 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify right))) (property "Footprint" "" (at 45.72 119.38 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 45.72 119.38 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 45.72 119.38 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid c7842cf6-570c-4e4d-a1b9-474392977e99)) (pin "2" (uuid 0f57b22e-8d2b-438a-a6fd-99f78ec7fc5d)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "SG2") (unit 1)))))
+(symbol (lib_id "Device:R_Variable") (at 66.04 104.14 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid a2a05d3c-cc70-4aad-8ea5-76a473049794) (property "Reference" "SG4" (at 69.215 102.87 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "350R transverse" (at 69.215 105.41 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 66.04 104.14 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 66.04 104.14 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 66.04 104.14 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid ae843b14-7c28-446f-8139-e5a4183211d1)) (pin "2" (uuid 0c5141d0-7d87-486f-8cfb-8ee8ec69d9ea)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "SG4") (unit 1)))))
+(symbol (lib_id "Device:R_Variable") (at 66.04 119.38 0) (unit 1) (exclude_from_sim no) (in_bom no) (on_board no) (dnp no) (uuid 6cca49ed-2de9-43b6-b3d2-7ab35d2d0592) (property "Reference" "SG3" (at 69.215 118.11 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "350R axial" (at 69.215 120.65 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "" (at 66.04 119.38 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 66.04 119.38 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 66.04 119.38 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 8058d80c-dd49-4b2e-bd59-4eae7da368e0)) (pin "2" (uuid 0643260f-d3c8-4d6d-8428-63bdf6e395cf)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "SG3") (unit 1)))))
+(wire (pts (xy 45.72 96.52) (xy 45.72 100.33)) (stroke (width 0) (type default)) (uuid 6864d7ba-7d03-444b-9c25-7cd61aeca903))
+(wire (pts (xy 45.72 107.95) (xy 45.72 115.57)) (stroke (width 0) (type default)) (uuid df409592-aa82-493e-aa45-664135673189))
+(wire (pts (xy 45.72 123.19) (xy 45.72 127)) (stroke (width 0) (type default)) (uuid 802090f4-744f-43b7-9722-b09162b47ccc))
+(wire (pts (xy 66.04 96.52) (xy 66.04 100.33)) (stroke (width 0) (type default)) (uuid 6c329161-80da-4c37-b702-b17c98a1d06f))
+(wire (pts (xy 66.04 107.95) (xy 66.04 115.57)) (stroke (width 0) (type default)) (uuid 8b0ac35e-a25c-4363-a86e-0a50e4e03e3f))
+(wire (pts (xy 66.04 123.19) (xy 66.04 127)) (stroke (width 0) (type default)) (uuid 85b4c7e6-5009-4e90-9b41-e9945afd7bcc))
+(wire (pts (xy 45.72 96.52) (xy 66.04 96.52)) (stroke (width 0) (type default)) (uuid 7f8f0640-2eba-4118-83dc-14baff2aad88))
+(wire (pts (xy 45.72 127) (xy 66.04 127)) (stroke (width 0) (type default)) (uuid 5ee5cf8a-62bb-4d61-aeeb-046dec8795e8))
+(wire (pts (xy 55.88 93.98) (xy 55.88 96.52)) (stroke (width 0) (type default)) (uuid 23244c11-8ef5-408e-9a2c-a75f78627446))
+(junction (at 55.88 96.52) (diameter 0) (color 0 0 0 0) (uuid 8dbe98d4-127f-4351-82a2-e7ac36128ef9))
+(symbol (lib_id "power:+3.3VA") (at 55.88 93.98 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 5e4e5521-1044-4265-8e43-2b4fa0460325) (property "Reference" "#PWR14" (at 55.88 87.63 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3.3VA" (at 55.88 90.17 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 55.88 93.98 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 55.88 93.98 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 55.88 93.98 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid f27c5a3c-7dd6-4f42-a803-d3d991fac915)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR14") (unit 1)))))
+(wire (pts (xy 55.88 127) (xy 55.88 129.54)) (stroke (width 0) (type default)) (uuid a3ade8ec-7e4e-4639-8da5-d4c2eef82639))
+(junction (at 55.88 127) (diameter 0) (color 0 0 0 0) (uuid 9659a608-d04b-4251-b15d-f0bd8e3fc680))
+(symbol (lib_id "power:GND") (at 55.88 129.54 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 4c662930-7c5b-4325-90a2-c378acc03150) (property "Reference" "#PWR15" (at 55.88 135.89 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 55.88 133.35 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 55.88 129.54 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 55.88 129.54 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 55.88 129.54 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 7bdd2a54-5f8f-4e8f-a92b-be3a165529ad)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR15") (unit 1)))))
+(wire (pts (xy 45.72 111.76) (xy 50.8 111.76)) (stroke (width 0) (type default)) (uuid 2a49b2de-5af2-428f-a6d9-a038ddd18309))
+(junction (at 45.72 111.76) (diameter 0) (color 0 0 0 0) (uuid bee878c2-8ca2-471f-ae82-31e75a1b42d9))
+(label "SIG-" (at 50.8 111.76 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 1fce45a4-3be1-4dbf-91c7-ccc41fc923f7))
+(wire (pts (xy 66.04 111.76) (xy 71.12 111.76)) (stroke (width 0) (type default)) (uuid 0d3bbc5c-d05e-4d68-b2c8-5bdc950d3242))
+(junction (at 66.04 111.76) (diameter 0) (color 0 0 0 0) (uuid c7873146-166b-4d7b-ba9d-ec65c11cd4a1))
+(label "SIG+" (at 71.12 111.76 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid b53e1441-bc42-4d1c-b2d6-2afc968a0a32))
+(symbol (lib_id "Connector_Generic:Conn_01x04") (at 104.14 111.76 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid d89281ca-bb9c-4af9-b272-359f5dc0ad76) (property "Reference" "J2" (at 104.14 106.68 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "To rod" (at 104.14 119.38 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "StrainGauge:GaugePads_1x04" (at 104.14 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 104.14 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 104.14 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 01ce799a-fa42-418e-b79f-6da5a4c32cab)) (pin "2" (uuid e5f43103-3ab8-434e-bd90-c6ec0fc4d4a7)) (pin "3" (uuid ca408d52-5905-4560-81ff-0c7e71706fa5)) (pin "4" (uuid 039a4f79-c444-438d-9c77-722e066d9026)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "J2") (unit 1)))))
+(wire (pts (xy 99.06 109.22) (xy 93.98 109.22)) (stroke (width 0) (type default)) (uuid c396401d-a980-4c6e-849d-5e5b97c7ac48))
+(wire (pts (xy 93.98 109.22) (xy 93.98 106.68)) (stroke (width 0) (type default)) (uuid 6a08d476-127b-4afe-9b98-59e1e32a4a99))
+(symbol (lib_id "power:+3.3VA") (at 93.98 106.68 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 8c90d106-f3e6-4dc4-8336-0081fdf75738) (property "Reference" "#PWR16" (at 93.98 100.33 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3.3VA" (at 93.98 102.87 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 93.98 106.68 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 93.98 106.68 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 93.98 106.68 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid ac0b17a3-8a86-460f-bf33-d367c265b5f4)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR16") (unit 1)))))
+(wire (pts (xy 99.06 111.76) (xy 96.52 111.76)) (stroke (width 0) (type default)) (uuid 0f81c402-8b37-4ccf-974a-df299544531e))
+(label "SIG+" (at 96.52 111.76 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid 621f8f2f-b92f-47de-801b-e53809ab892d))
+(wire (pts (xy 99.06 114.3) (xy 96.52 114.3)) (stroke (width 0) (type default)) (uuid bba789aa-3d6f-45c5-9a21-2b44d26c2b2a))
+(label "SIG-" (at 96.52 114.3 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid 5a5cc56d-4068-4a3e-a3e0-99cd54649e48))
+(wire (pts (xy 99.06 116.84) (xy 93.98 116.84)) (stroke (width 0) (type default)) (uuid 835185a1-03aa-4474-a79a-2e4a8c133977))
+(wire (pts (xy 93.98 116.84) (xy 93.98 119.38)) (stroke (width 0) (type default)) (uuid 16985356-2614-46e5-80b2-492b1a5e52e0))
+(symbol (lib_id "power:GND") (at 93.98 119.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 6d02c445-08c0-489c-83af-11b6fbb4088b) (property "Reference" "#PWR17" (at 93.98 125.73 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 93.98 123.19 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 93.98 119.38 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 93.98 119.38 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 93.98 119.38 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 7de25bbf-f703-4ba8-97bd-231bfb470fe8)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR17") (unit 1)))))
+(text "1 EXC+\n2 SIG+\n3 SIG-\n4 EXC-" (exclude_from_sim no) (at 99.06 132.08 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid f6de39a8-b6a6-438b-b6d3-87c0f8bc706f))
+(text "Amplifier, gain 201" (exclude_from_sim no) (at 142.24 86.36 0) (effects (font (size 1.8 1.8) (bold yes)) (justify left bottom)) (uuid 03c12ff1-04dc-4d97-ad71-f4befe0e0cfd))
+(symbol (lib_id "Amplifier_Instrumentation:INA333xxDRG") (at 162.56 111.76 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid a93dc203-0f3d-4d7e-a173-21a2f935fa3c) (property "Reference" "U2" (at 166.9 105.5 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "INA333xxDRG" (at 166.9 118.3 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Package_SON:WSON-8-1EP_3x3mm_P0.5mm_EP1.45x2.4mm" (at 162.56 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina333.pdf" (at 162.56 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 162.56 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 8f451006-da30-45e0-a12a-a0c00ebccdad)) (pin "2" (uuid bc7be6a0-8f0b-4d96-8722-a01aa883bc1f)) (pin "3" (uuid 81b4c852-f576-41a8-8236-1251508e668b)) (pin "4" (uuid 52e9b516-b62d-4b10-bf72-2acffe76aab2)) (pin "5" (uuid d3850196-0a6d-49ca-931e-31097b97858d)) (pin "6" (uuid 687e15ea-1938-4bb7-80c6-3025acf766c8)) (pin "7" (uuid 3900eda8-22ed-49f3-9a47-3d8f29643e8a)) (pin "8" (uuid 84b095b5-adff-488e-a6a1-38bed483a16a)) (pin "9" (uuid 865de5ad-44e3-454a-b5e6-8bf0e74f4400)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "U2") (unit 1)))))
+(wire (pts (xy 154.94 106.68) (xy 142.24 106.68)) (stroke (width 0) (type default)) (uuid d2ff2a8c-99dc-46b3-abc2-bf65f2d0040c))
+(wire (pts (xy 154.94 116.84) (xy 142.24 116.84)) (stroke (width 0) (type default)) (uuid 785bd9a3-ac83-4d92-8535-d0b2a271499a))
+(symbol (lib_id "Device:R") (at 147.32 111.76 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 094ff610-8de3-4abc-a9aa-c5adbeea987d) (property "Reference" "R1" (at 144.78 110.49 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify right))) (property "Value" "499R 0.1%" (at 144.78 113.03 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify right))) (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 147.32 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 147.32 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 147.32 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid e4c47c62-2b27-407d-b96e-e98e3872de9b)) (pin "2" (uuid e143794e-f17e-4b70-bc38-e1c10454b254)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "R1") (unit 1)))))
+(wire (pts (xy 147.32 107.95) (xy 149.86 107.95)) (stroke (width 0) (type default)) (uuid f2530999-95be-4669-b5d1-eee0b0bd94f0))
+(wire (pts (xy 149.86 107.95) (xy 149.86 109.22)) (stroke (width 0) (type default)) (uuid 8af19189-8e8b-4097-bd95-ce9ba70dc320))
+(wire (pts (xy 149.86 109.22) (xy 154.94 109.22)) (stroke (width 0) (type default)) (uuid 6a17406e-8408-40fc-8ba3-54aaf2534a0e))
+(wire (pts (xy 147.32 115.57) (xy 149.86 115.57)) (stroke (width 0) (type default)) (uuid 9f16e8fb-f390-41dd-996a-4725fdc02bc8))
+(wire (pts (xy 149.86 115.57) (xy 149.86 114.3)) (stroke (width 0) (type default)) (uuid 387aedde-df2c-4f36-81b6-3952f990812d))
+(wire (pts (xy 149.86 114.3) (xy 154.94 114.3)) (stroke (width 0) (type default)) (uuid e9918964-32fc-452a-87b6-2644b8e3fe8c))
+(symbol (lib_id "power:+3.3VA") (at 162.56 93.98 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 536d1774-28f4-456e-8f72-1e345d0e617e) (property "Reference" "#PWR18" (at 162.56 87.63 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3.3VA" (at 162.56 90.17 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 162.56 93.98 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 162.56 93.98 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 162.56 93.98 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid c026924d-5543-4cdf-acc4-72099d64c6fb)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR18") (unit 1)))))
+(wire (pts (xy 162.56 93.98) (xy 162.56 104.14)) (stroke (width 0) (type default)) (uuid a84790ec-ff80-46e6-b9cc-62f350dff0c9))
+(wire (pts (xy 162.56 96.52) (xy 175.26 96.52)) (stroke (width 0) (type default)) (uuid 10202798-2f7e-41f7-8faf-8b19cd26ef5e))
+(junction (at 162.56 96.52) (diameter 0) (color 0 0 0 0) (uuid c8a212f5-8ad1-4472-b84a-ff71c4a082c4))
+(symbol (lib_id "Device:C") (at 175.26 100.33 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid ddf8b5f3-bbdc-42b2-8325-0c34cb67977d) (property "Reference" "C3" (at 177.8 99.06 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 177.8 101.6 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (at 175.26 100.33 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 175.26 100.33 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 175.26 100.33 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 3ba18732-2c7d-4382-b8b9-556f721eb9ff)) (pin "2" (uuid 32b30ddd-8ece-45c4-b542-4a7228d3545c)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "C3") (unit 1)))))
+(symbol (lib_id "power:GND") (at 175.26 104.14 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 340c156d-fdc3-41c9-9984-af8a7690035c) (property "Reference" "#PWR19" (at 175.26 110.49 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 175.26 107.95 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 175.26 104.14 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 175.26 104.14 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 175.26 104.14 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 61a7150a-778a-4ee6-8251-bb1acd88d90d)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR19") (unit 1)))))
+(wire (pts (xy 162.56 119.38) (xy 162.56 121.92)) (stroke (width 0) (type default)) (uuid 9e29c660-ee6f-44fd-a72f-152c5c3b2ab6))
+(symbol (lib_id "power:GND") (at 162.56 121.92 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid fbd33de1-9308-47d6-b225-e40be21172db) (property "Reference" "#PWR20" (at 162.56 128.27 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 162.56 125.73 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 162.56 121.92 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 162.56 121.92 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 162.56 121.92 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 38dde2d7-93ed-4a3b-9be2-6b236897726d)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR20") (unit 1)))))
+(wire (pts (xy 165.1 104.14) (xy 165.1 101.6)) (stroke (width 0) (type default)) (uuid 463465b3-f0c7-4cd4-ab92-a3ecc382e77e))
+(wire (pts (xy 165.1 101.6) (xy 167.64 101.6)) (stroke (width 0) (type default)) (uuid a6b5f5ef-580b-4bc3-94ab-300c98f2c173))
+(label "VREF" (at 167.64 101.6 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 8beb6711-ddf3-443a-908c-6d72e301a7b6))
+(wire (pts (xy 165.1 119.38) (xy 165.1 121.92)) (stroke (width 0) (type default)) (uuid 090dacc7-c0d7-4afe-96ad-7c476ffed2e4))
+(wire (pts (xy 165.1 121.92) (xy 162.56 121.92)) (stroke (width 0) (type default)) (uuid 5d2c9f50-8338-42e4-a071-4fa59785e622))
+(junction (at 162.56 121.92) (diameter 0) (color 0 0 0 0) (uuid 18d1e316-ffa7-4ebb-90f4-ebcd22ec06e5))
+(symbol (lib_id "Device:R") (at 182.88 111.76 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 711f4405-b60e-42f1-9f52-98a11962917d) (property "Reference" "R4" (at 182.88 106.68 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "1k" (at 182.88 109.22 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "Resistor_SMD:R_0201_0603Metric" (at 182.88 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 182.88 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 182.88 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 39a84b1c-4106-4867-b6e6-c325de7bf268)) (pin "2" (uuid 181aa294-2cf6-490d-8028-cee9841c93d4)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "R4") (unit 1)))))
+(wire (pts (xy 172.72 111.76) (xy 179.07 111.76)) (stroke (width 0) (type default)) (uuid 714c6c9b-8270-4f91-b623-27c00ad32e45))
+(wire (pts (xy 186.69 111.76) (xy 198.12 111.76)) (stroke (width 0) (type default)) (uuid f7564443-1d54-4438-b644-0b6ab4bd36b2))
+(junction (at 193.04 111.76) (diameter 0) (color 0 0 0 0) (uuid 12352674-ba43-45be-8de3-b0c100c81014))
+(wire (pts (xy 193.04 111.76) (xy 193.04 113.03)) (stroke (width 0) (type default)) (uuid b4774d0a-5040-4167-975c-34eda67ccbe7))
+(symbol (lib_id "Device:C") (at 193.04 116.84 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 4eb066aa-a41a-4203-b988-d6f3216cc816) (property "Reference" "C5" (at 195.58 115.57 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "330n" (at 195.58 118.11 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (at 193.04 116.84 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 193.04 116.84 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 193.04 116.84 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid fdf0d2a8-c820-4464-b9dd-1544d16383cd)) (pin "2" (uuid 1641a4c5-ce2f-45ee-8ee4-509bb0fff85d)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "C5") (unit 1)))))
+(symbol (lib_id "power:GND") (at 193.04 120.65 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid a5171a1e-1cd6-44d8-a4d3-264fbd44fac0) (property "Reference" "#PWR21" (at 193.04 127 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 193.04 124.46 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 193.04 120.65 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 193.04 120.65 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 193.04 120.65 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 667660d6-6cb2-46e8-abda-03a4b9c5c9e4)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR21") (unit 1)))))
+(label "AMP_OUT" (at 198.12 111.76 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid ef1be5bd-c53f-4d09-887c-7633200ac352))
+(text "Input filter" (exclude_from_sim no) (at 109.22 92.71 0) (effects (font (size 1.8 1.8) (bold yes)) (justify left bottom)) (uuid c4773da0-5205-4091-876a-6912c7839268))
+(label "SIG+" (at 113.03 106.68 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid 6a0fe486-d488-4fc7-b223-6c55e03dfcf1))
+(symbol (lib_id "Device:R") (at 116.84 106.68 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid a1993ba4-a1f3-4e00-a78e-68caad38f8b2) (property "Reference" "R5" (at 116.84 101.6 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "100R" (at 116.84 104.14 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "Resistor_SMD:R_0201_0603Metric" (at 116.84 106.68 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 116.84 106.68 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 116.84 106.68 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid fcafcf45-f77d-4636-a7f6-bfec6c4eb967)) (pin "2" (uuid 56f859ca-475e-4ad6-b5bf-f379bd6be319)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "R5") (unit 1)))))
+(wire (pts (xy 120.65 106.68) (xy 142.24 106.68)) (stroke (width 0) (type default)) (uuid bef4f836-7af6-47b1-8fd2-30fc5c74ca19))
+(junction (at 127 106.68) (diameter 0) (color 0 0 0 0) (uuid 1e87e87b-558c-49c5-92dd-4ced90cdc2ad))
+(label "SIG-" (at 113.03 116.84 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid 9d2df721-a781-440b-a94d-aea814f4474b))
+(symbol (lib_id "Device:R") (at 116.84 116.84 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid ae7ff4fe-d6e0-4f9b-a0f1-67f52df4710a) (property "Reference" "R6" (at 116.84 120.65 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "100R" (at 116.84 123.19 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "Resistor_SMD:R_0201_0603Metric" (at 116.84 116.84 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 116.84 116.84 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 116.84 116.84 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid d4d9a7f3-d17e-494d-bfe2-7e1b2091654a)) (pin "2" (uuid 6f01f694-2d14-4559-a075-48d96dbd610d)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "R6") (unit 1)))))
+(wire (pts (xy 120.65 116.84) (xy 142.24 116.84)) (stroke (width 0) (type default)) (uuid d85206a9-c39d-42d1-be24-d9a0e135cd5a))
+(junction (at 127 116.84) (diameter 0) (color 0 0 0 0) (uuid 39dc3c91-17d6-4e99-999f-5f25caa9295a))
+(symbol (lib_id "Device:C") (at 127 111.76 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid f18e3db9-4afd-4b9b-96b8-248707d688f7) (property "Reference" "C6" (at 124.46 110.49 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify right))) (property "Value" "10n" (at 124.46 113.03 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify right))) (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (at 127 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 127 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 127 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid c633ee49-cbab-41d4-846e-40e35096a9a1)) (pin "2" (uuid cb644682-80fa-42fe-b7ff-f041437b0c55)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "C6") (unit 1)))))
+(wire (pts (xy 127 106.68) (xy 127 107.95)) (stroke (width 0) (type default)) (uuid d221f330-f19e-4d84-b6e6-5df658f25edc))
+(wire (pts (xy 127 115.57) (xy 127 116.84)) (stroke (width 0) (type default)) (uuid a668dbf0-5691-436e-a57b-87e3ac66b59e))
+(text "Analog 3.3 V" (exclude_from_sim no) (at 132.08 38.1 0) (effects (font (size 1.8 1.8) (bold yes)) (justify left bottom)) (uuid a1a29982-1f8b-4118-b7cc-ab482a473d5f))
+(symbol (lib_id "power:+3V3") (at 132.08 48.26 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 6d5a26d0-f2b5-4fc0-bff4-6fb2b943c8d8) (property "Reference" "#PWR22" (at 132.08 41.91 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3V3" (at 132.08 44.45 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 132.08 48.26 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 132.08 48.26 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 132.08 48.26 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 5da15173-d7ac-4705-91b8-9998f898b417)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR22") (unit 1)))))
+(wire (pts (xy 132.08 48.26) (xy 137.16 48.26)) (stroke (width 0) (type default)) (uuid 781cada1-e39d-45a6-84be-33f3ce1c3cba))
+(symbol (lib_id "Device:FerriteBead") (at 140.97 48.26 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 1f7aad72-e15f-4b60-9d5b-cd62f207a168) (property "Reference" "FB1" (at 137.16 44.45 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "600R 100MHz" (at 137.16 52.07 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 140.97 48.26 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 140.97 48.26 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 140.97 48.26 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 6a520b9d-e710-4838-b127-54afbea214eb)) (pin "2" (uuid cc0c5c17-2a5c-40c3-8940-4bfa2abf3085)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "FB1") (unit 1)))))
+(wire (pts (xy 144.78 48.26) (xy 160.02 48.26)) (stroke (width 0) (type default)) (uuid bc3ec6f1-0bbd-424f-a5aa-43630ea1fcf9))
+(symbol (lib_id "power:+3.3VA") (at 152.4 45.72 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid e5ca7c45-1557-4579-8ffb-2e718d8cbe6a) (property "Reference" "#PWR23" (at 152.4 39.37 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3.3VA" (at 152.4 41.91 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 152.4 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 152.4 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 152.4 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid d5e2ee2a-5262-42f2-b07c-9946859fef00)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR23") (unit 1)))))
+(wire (pts (xy 152.4 45.72) (xy 152.4 49.53)) (stroke (width 0) (type default)) (uuid 645f8f71-8da9-43f5-ba7d-d71a8fa1d872))
+(junction (at 152.4 48.26) (diameter 0) (color 0 0 0 0) (uuid 63e5cf73-376e-4ac2-84b2-f56b072e82ba))
+(wire (pts (xy 160.02 48.26) (xy 160.02 49.53)) (stroke (width 0) (type default)) (uuid 1335618c-79f3-4d79-a056-5a0bbfec406c))
+(symbol (lib_id "power:PWR_FLAG") (at 147.32 45.72 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 034286cd-ca9e-4fa2-a3b4-981a5693a978) (property "Reference" "#FLG24" (at 147.32 39.37 0) (show_name no) (do_not_autoplace no) (hide yes) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "PWR_FLAG" (at 147.32 41.91 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 147.32 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 147.32 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 147.32 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 3d549173-65f3-4026-9d21-c47d29a643ca)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#FLG24") (unit 1)))))
+(wire (pts (xy 147.32 45.72) (xy 147.32 48.26)) (stroke (width 0) (type default)) (uuid f1815b2f-8a16-4ffb-aa5d-787d522be155))
+(junction (at 147.32 48.26) (diameter 0) (color 0 0 0 0) (uuid ac7a2db8-9b33-4348-8558-f72f0d42a9ae))
+(symbol (lib_id "Device:C") (at 152.4 53.34 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 2ee7e1b4-0c90-4d54-b8a4-1ad374efbaa8) (property "Reference" "C7" (at 154.94 52.07 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "1u 10V" (at 154.94 54.61 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 152.4 53.34 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 152.4 53.34 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 152.4 53.34 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid dd5c45fb-fe28-4b69-9e36-7415581e81f5)) (pin "2" (uuid 4f38cfa4-8a02-423a-91f3-9aa43709405e)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "C7") (unit 1)))))
+(symbol (lib_id "power:GND") (at 152.4 57.15 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid d625762e-7501-440d-ae90-71d8139734e0) (property "Reference" "#PWR25" (at 152.4 63.5 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 152.4 60.96 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 152.4 57.15 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 152.4 57.15 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 152.4 57.15 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 68ddb090-cfb9-40bf-832c-5c32e2f39c90)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR25") (unit 1)))))
+(symbol (lib_id "Device:C") (at 160.02 53.34 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid edee8b02-861a-40fd-a489-5c834783eb96) (property "Reference" "C8" (at 162.56 52.07 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 162.56 54.61 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (at 160.02 53.34 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 160.02 53.34 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 160.02 53.34 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 2f78fc7f-cb8a-4ad5-bb3c-c0b16417f6f5)) (pin "2" (uuid a6a0b323-8cdf-431d-8a5a-7ea73b798cca)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "C8") (unit 1)))))
+(symbol (lib_id "power:GND") (at 160.02 57.15 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 85f82092-1feb-437e-939b-ebd90a359091) (property "Reference" "#PWR26" (at 160.02 63.5 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 160.02 60.96 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 160.02 57.15 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 160.02 57.15 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 160.02 57.15 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid d51ad2ef-68de-43d8-8e78-e373e16caabc)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR26") (unit 1)))))
+(text "MCU decoupling" (exclude_from_sim no) (at 172.72 38.1 0) (effects (font (size 1.8 1.8) (bold yes)) (justify left bottom)) (uuid abaa0b3b-1245-4785-977f-998e56a840b2))
+(symbol (lib_id "power:+3V3") (at 172.72 46.99 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 3a3e59cd-d397-4457-897b-676c3aa14524) (property "Reference" "#PWR27" (at 172.72 40.64 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3V3" (at 172.72 43.18 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 172.72 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 172.72 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 172.72 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 9f70a56d-f146-4551-8ef1-96277bc7a4f9)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR27") (unit 1)))))
+(symbol (lib_id "Device:C") (at 172.72 50.8 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 601cbe76-3e39-460d-b198-8cb4c1414b05) (property "Reference" "C10" (at 175.26 49.53 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 175.26 52.07 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (at 172.72 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 172.72 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 172.72 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid f0ad2b12-c3a3-4aa2-856f-731515699f53)) (pin "2" (uuid 3734a4a8-f2d7-4e67-b0df-c0de8b7983b0)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "C10") (unit 1)))))
+(symbol (lib_id "power:GND") (at 172.72 54.61 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 124bd351-5afc-4dfe-bd97-f022f86fce34) (property "Reference" "#PWR28" (at 172.72 60.96 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 172.72 58.42 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 172.72 54.61 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 172.72 54.61 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 172.72 54.61 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 0ab96e3a-1857-450d-9a89-774d7fadd746)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR28") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 180.34 46.99 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 2b629708-e52b-4dd2-8b42-c43ba3239d54) (property "Reference" "#PWR29" (at 180.34 40.64 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3V3" (at 180.34 43.18 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 180.34 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 180.34 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 180.34 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 01ea7d74-6073-4eec-bc68-eb102ba036e5)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR29") (unit 1)))))
+(symbol (lib_id "Device:C") (at 180.34 50.8 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 5b2a22c8-787f-4609-b4d9-b97e0af74c29) (property "Reference" "C11" (at 182.88 49.53 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 182.88 52.07 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (at 180.34 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 180.34 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 180.34 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid d465f311-0a70-4aea-a242-24000e28cd57)) (pin "2" (uuid 932da7ef-aeb5-4e2b-886f-4be6bb7824e4)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "C11") (unit 1)))))
+(symbol (lib_id "power:GND") (at 180.34 54.61 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 4c2b5474-1aa1-43df-8235-903f17d66044) (property "Reference" "#PWR30" (at 180.34 60.96 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 180.34 58.42 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 180.34 54.61 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 180.34 54.61 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 180.34 54.61 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid dce95a94-af75-46e7-a6f9-8024405cd8c0)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR30") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 187.96 46.99 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 8d1c79f7-4aef-4e87-b119-93588c65ed2f) (property "Reference" "#PWR31" (at 187.96 40.64 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3V3" (at 187.96 43.18 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 187.96 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 187.96 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 187.96 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 4d3d17be-bb8d-4f48-9d3b-1bce294419fa)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR31") (unit 1)))))
+(symbol (lib_id "Device:C") (at 187.96 50.8 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 5e4ea666-6280-4519-9f45-3ae11facc25f) (property "Reference" "C12" (at 190.5 49.53 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 190.5 52.07 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (at 187.96 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 187.96 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 187.96 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 8e361237-40da-4a3b-b5d9-3cd6429b28ee)) (pin "2" (uuid c6c41535-edb8-4b1f-8061-390d2999972f)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "C12") (unit 1)))))
+(symbol (lib_id "power:GND") (at 187.96 54.61 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 0ca85d64-8198-4c25-b140-3a25a25d889e) (property "Reference" "#PWR32" (at 187.96 60.96 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 187.96 58.42 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 187.96 54.61 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 187.96 54.61 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 187.96 54.61 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid efe823e5-1bb9-49b0-bce9-39d59a64e1a1)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR32") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 195.58 46.99 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 63375069-dc6d-4608-abb8-8fbc2f480b10) (property "Reference" "#PWR33" (at 195.58 40.64 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3V3" (at 195.58 43.18 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 195.58 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 195.58 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 195.58 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 5a4691be-794c-49b5-aae3-33c7c600bbab)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR33") (unit 1)))))
+(symbol (lib_id "Device:C") (at 195.58 50.8 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 7f91782f-033b-425e-bce7-6e77a0a6d136) (property "Reference" "C13" (at 198.12 49.53 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "4.7u 10V" (at 198.12 52.07 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 195.58 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 195.58 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 195.58 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 16cc3db3-673c-4401-8a89-4546629985af)) (pin "2" (uuid 8e66b1c9-b45e-44af-b95a-463073f7a71e)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "C13") (unit 1)))))
+(symbol (lib_id "power:GND") (at 195.58 54.61 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid d0b5b2d2-dc1c-49ba-9325-ca1ca5789eb8) (property "Reference" "#PWR34" (at 195.58 60.96 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 195.58 58.42 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 195.58 54.61 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 195.58 54.61 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 195.58 54.61 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid a1aa07d4-6b12-4fa6-84f5-5669b9b3867e)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR34") (unit 1)))))
+(symbol (lib_id "MCU_ST_STM32U5:STM32U575CITx") (at 236.22 88.9 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 1798767e-f55d-4cc4-b35a-95fe0df29c3e) (property "Reference" "U3" (at 223.52 46.99 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "STM32U575CIT6" (at 238.76 130.81 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Package_QFP:LQFP-48_7x7mm_P0.5mm" (at 236.22 88.9 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "https://www.st.com/resource/en/datasheet/stm32u575ci.pdf" (at 236.22 88.9 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 236.22 88.9 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 95d1e58d-7d99-4cdd-8c81-9abee93c8194)) (pin "2" (uuid 834768bf-dd65-434d-a510-97847b2dbaeb)) (pin "3" (uuid a2daa138-393e-4724-b043-3cda347de0c7)) (pin "4" (uuid f11877f2-6fa8-42b0-a0c5-6ad536162743)) (pin "5" (uuid f4f068b8-6928-4f11-a8ef-96a1b2830d15)) (pin "6" (uuid 4a31f73d-9728-49d8-ab3f-9c4958ee0181)) (pin "7" (uuid f9b5918a-4bc6-4ca1-a251-988f1fd6ab76)) (pin "8" (uuid 78840f77-5435-4f83-b847-6373b968ad67)) (pin "9" (uuid d3c0bfb7-ca07-4e40-a85d-6fbd1a5cea01)) (pin "10" (uuid 9642aa0f-43d4-4dc3-bd70-734f6d1f9feb)) (pin "11" (uuid 86f7bb78-0514-455c-9616-8418a8cd4e73)) (pin "12" (uuid 9d29db64-969c-48cf-86d2-9d80fd68a800)) (pin "13" (uuid 4aad1ebd-6ca2-40d8-bd37-982549348477)) (pin "14" (uuid 9f681ab5-1055-4d7f-b35c-e489636a68a2)) (pin "15" (uuid 8bece157-7cbc-4749-9315-141d53d19041)) (pin "16" (uuid a5e9d052-ddaf-4bf1-aeff-8b2e1d5589b3)) (pin "17" (uuid 926571d2-9ba3-44ef-86d8-716fadbb3cca)) (pin "18" (uuid 3ac6ecfa-bc9a-4fe3-8b1c-2adb60120a53)) (pin "19" (uuid ed6e0a22-1fb0-4f70-950b-54b6723ff31d)) (pin "20" (uuid b94c512f-cb05-441e-b309-6730d645480b)) (pin "21" (uuid 2137d720-db3d-4649-897c-08662206c0e9)) (pin "22" (uuid e62bd283-9057-4b0f-9853-466a6ccbf41d)) (pin "23" (uuid d92a7556-3cec-4c1a-93c7-20a8232e26ca)) (pin "24" (uuid 14afcd70-90a9-414f-817f-ec38aec76e18)) (pin "25" (uuid 08a3fc60-78be-4485-aa74-991e6035cd70)) (pin "26" (uuid 3fa520fe-bf7d-4c81-9197-6cb69d89a2ad)) (pin "27" (uuid 8f11a5ce-634a-43d4-b2b9-cee03eb4d7ae)) (pin "28" (uuid bf1c76a3-f626-4ba3-800c-a7124cf59e78)) (pin "29" (uuid 2b6c7111-eac5-4921-bcf2-9af34b260148)) (pin "30" (uuid 0ba6ddc5-62c3-4110-b46e-26219a1cc0be)) (pin "31" (uuid 3cbef22c-8b30-46e5-a481-69f7e0751065)) (pin "32" (uuid 59cb20fd-b46c-4745-aba2-b0aa444ab035)) (pin "33" (uuid 594a9da1-0420-404e-bf2f-c40f839d3e2b)) (pin "34" (uuid 0a51b10d-6385-407f-9f7c-d915ed889448)) (pin "35" (uuid 8b4d729e-d5da-4c48-a091-f20b7ee82450)) (pin "36" (uuid 69401384-8017-430d-a336-06c0f84d6bec)) (pin "37" (uuid 0dd7b6f1-0877-40aa-8223-d93cdb701bc5)) (pin "38" (uuid 2947c5a6-2445-4298-8386-9890cb378f40)) (pin "39" (uuid b8609fbc-42d2-4d04-abd0-a4bbb4918be5)) (pin "40" (uuid fcbe3b75-f956-49b4-adbb-e986567e4201)) (pin "41" (uuid 163556e4-7912-43dd-bdf1-4de35036e9d3)) (pin "42" (uuid 8337609a-c9ed-40b0-b19a-d3798bb585ca)) (pin "43" (uuid b86c26f9-65f7-4ee6-b00c-56f00e995847)) (pin "44" (uuid 02eedecc-da43-425f-ac22-88dbb43e9ee7)) (pin "45" (uuid 40f10974-27a2-4a06-8c50-24bf91ff54c9)) (pin "46" (uuid 40dcfa25-1448-48a1-b29a-3206b5086325)) (pin "47" (uuid 0d4ec350-b683-4c80-b594-e33e696fe378)) (pin "48" (uuid b384c6c1-5713-4870-b879-a23a96b8e709)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "U3") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 236.22 40.64 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 638df713-b124-444e-bc18-0c6ceca302e4) (property "Reference" "#PWR35" (at 236.22 34.29 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3V3" (at 236.22 36.83 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 236.22 40.64 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 236.22 40.64 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 236.22 40.64 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 95aab4ca-67ad-4d7a-9a19-18e3cd8651d2)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR35") (unit 1)))))
+(wire (pts (xy 231.14 43.18) (xy 238.76 43.18)) (stroke (width 0) (type default)) (uuid 7fd08195-3c9d-4bef-bb32-273ccc58e035))
+(wire (pts (xy 236.22 40.64) (xy 236.22 43.18)) (stroke (width 0) (type default)) (uuid 14802e4f-526a-4f5f-aae7-d22138035a56))
+(junction (at 236.22 43.18) (diameter 0) (color 0 0 0 0) (uuid ccff64ca-6737-4f18-9037-02ecbf7e9916))
+(wire (pts (xy 231.14 43.18) (xy 231.14 48.26)) (stroke (width 0) (type default)) (uuid d5e393c3-8e3c-40d8-afe5-0e905325a2d1))
+(wire (pts (xy 233.68 43.18) (xy 233.68 48.26)) (stroke (width 0) (type default)) (uuid 7f7f1945-df4d-43d3-82e1-6fcb7b7ea603))
+(wire (pts (xy 238.76 43.18) (xy 238.76 48.26)) (stroke (width 0) (type default)) (uuid 0074868c-f8b5-45bb-a6de-15bd566288fd))
+(wire (pts (xy 236.22 43.18) (xy 236.22 48.26)) (stroke (width 0) (type default)) (uuid 663eebeb-1607-40fe-aeda-474f1ce9ad7d))
+(junction (at 233.68 43.18) (diameter 0) (color 0 0 0 0) (uuid 5faf8a69-194c-4ba2-813d-429b9f75788f))
+(symbol (lib_id "power:+3.3VA") (at 241.3 43.18 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 6c17fb30-bd35-4338-bd52-9e6c416593da) (property "Reference" "#PWR36" (at 241.3 36.83 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3.3VA" (at 241.3 39.37 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 241.3 43.18 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 241.3 43.18 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 241.3 43.18 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid d2163f7e-346f-4c36-9714-949fc4cdd6d3)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR36") (unit 1)))))
+(wire (pts (xy 241.3 43.18) (xy 241.3 48.26)) (stroke (width 0) (type default)) (uuid e7bd00c0-3da2-4c8f-bb92-96c7847e421f))
+(symbol (lib_id "power:GND") (at 236.22 132.08 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid d53a74ec-0f06-4c25-81e1-dbcbe09bfb1b) (property "Reference" "#PWR37" (at 236.22 138.43 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 236.22 135.89 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 236.22 132.08 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 236.22 132.08 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 236.22 132.08 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 0872ab71-201a-4505-9175-fb4057689749)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR37") (unit 1)))))
+(wire (pts (xy 236.22 129.54) (xy 236.22 132.08)) (stroke (width 0) (type default)) (uuid e6db704b-ee2a-4551-bb07-fbfd3dfbe3fb))
+(wire (pts (xy 238.76 129.54) (xy 238.76 132.08)) (stroke (width 0) (type default)) (uuid 88d63c84-5c46-44f6-9240-dff802750f98))
+(wire (pts (xy 238.76 132.08) (xy 236.22 132.08)) (stroke (width 0) (type default)) (uuid 2d9bed70-329d-4af2-bd80-49b3b81b45c1))
+(junction (at 236.22 132.08) (diameter 0) (color 0 0 0 0) (uuid a6279bd1-c142-4004-b91c-8078cb9d5aed))
+(wire (pts (xy 251.46 55.88) (xy 256.54 55.88)) (stroke (width 0) (type default)) (uuid 101e7d3f-f4d8-43af-b4fa-47cbe0d5b0aa))
+(label "AMP_OUT" (at 256.54 55.88 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 6a0592f2-7fa8-4dc7-9b6c-658c90b0bda1))
+(wire (pts (xy 251.46 83.82) (xy 256.54 83.82)) (stroke (width 0) (type default)) (uuid 2a61710d-317f-4485-b9fc-2ad241c79e6d))
+(label "CAN_RX" (at 256.54 83.82 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 5a52b7d6-b4cd-4288-a22c-4112734e8505))
+(wire (pts (xy 251.46 86.36) (xy 256.54 86.36)) (stroke (width 0) (type default)) (uuid 05835130-e592-4050-af68-587ca80177b1))
+(label "CAN_TX" (at 256.54 86.36 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid c39f213f-fca9-44b1-95e8-5c3ce663261b))
+(wire (pts (xy 251.46 88.9) (xy 256.54 88.9)) (stroke (width 0) (type default)) (uuid 71981d38-f84c-4b69-9553-8c3798eff64c))
+(label "SWDIO" (at 256.54 88.9 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 61a355bf-f2d4-4b47-80e5-9305d8fc529b))
+(wire (pts (xy 251.46 91.44) (xy 256.54 91.44)) (stroke (width 0) (type default)) (uuid 45d64fb3-1c0d-477a-afad-eb6cf250651a))
+(label "SWCLK" (at 256.54 91.44 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid cee11f9a-883f-47de-8725-fe91741f17c5))
+(wire (pts (xy 220.98 55.88) (xy 215.9 55.88)) (stroke (width 0) (type default)) (uuid 4bb5945d-ad13-4631-af71-475be8e50ca7))
+(label "NRST" (at 215.9 55.88 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid 8999a982-f90f-4a72-91c1-e80f6528712c))
+(wire (pts (xy 220.98 60.96) (xy 215.9 60.96)) (stroke (width 0) (type default)) (uuid a6bff58e-358c-4e7c-b184-46396a9e0e8f))
+(label "HSE_IN" (at 215.9 60.96 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid 5bbc4f91-ca13-49a4-a54f-3b1d62454268))
+(wire (pts (xy 220.98 63.5) (xy 215.9 63.5)) (stroke (width 0) (type default)) (uuid a7366e3c-6365-44cc-84c6-dc94f1d1edd3))
+(label "HSE_OUT" (at 215.9 63.5 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid 06ad8b30-e33e-4435-a43f-414d4353d224))
+(wire (pts (xy 220.98 66.04) (xy 215.9 66.04)) (stroke (width 0) (type default)) (uuid ba9ab69c-2d96-4e75-a4ff-ae692ebeb10d))
+(label "BOOT0" (at 215.9 66.04 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid f6e2c43c-16fb-47e9-b59f-fb127beb3e97))
+(no_connect (at 251.46 58.42) (uuid 7645a323-91f4-4a34-8812-397850284144))
+(no_connect (at 251.46 60.96) (uuid 12206535-5961-42fb-9945-92e4c0651d83))
+(no_connect (at 251.46 63.5) (uuid 64f5487e-04af-47a0-8e7c-b172cd303bb4))
+(no_connect (at 251.46 66.04) (uuid 085e171a-bcea-4ee6-9562-d5de7640ee63))
+(no_connect (at 251.46 68.58) (uuid 1a8b2542-6528-4216-a046-9aecfcdc4d3d))
+(no_connect (at 251.46 71.12) (uuid e88b4c78-bd40-48e4-b418-820c8e0169aa))
+(no_connect (at 251.46 73.66) (uuid 8a23004e-ec3d-4fb9-8196-25a2c59b4830))
+(no_connect (at 251.46 76.2) (uuid 6461d1ce-e24a-404d-baa6-6ca98ad16de4))
+(no_connect (at 251.46 78.74) (uuid e4316799-98ae-4fec-a651-d27f03cb1d44))
+(no_connect (at 251.46 81.28) (uuid a6c417fe-e967-4469-bec6-e6adfbe68850))
+(no_connect (at 251.46 93.98) (uuid 72f40f71-c0e9-4532-9149-0aa345494fed))
+(no_connect (at 220.98 71.12) (uuid 4cc9ae9e-7139-4575-822c-5371650e704a))
+(no_connect (at 220.98 73.66) (uuid 81dd8082-dd4a-4e26-a836-e1da90e4f8f0))
+(no_connect (at 220.98 76.2) (uuid ac7770cb-bae3-4c5e-94f2-d57920c2242a))
+(no_connect (at 220.98 81.28) (uuid 05150f00-18d9-4aa4-8c38-a40e2fd816ff))
+(no_connect (at 220.98 83.82) (uuid 7490a5a0-b5cb-49ad-b1eb-458d642354f4))
+(no_connect (at 220.98 86.36) (uuid d55155da-655f-46e2-a33d-ddfdbdf7280a))
+(no_connect (at 220.98 88.9) (uuid 1cc6eccd-b7ef-4985-846f-87775aa883cb))
+(no_connect (at 220.98 91.44) (uuid c22a2ccc-e292-4e6f-8dd7-3451a9297105))
+(no_connect (at 220.98 93.98) (uuid e34f09cf-c06f-4a4b-8146-dc6b15f0c0ff))
+(no_connect (at 220.98 96.52) (uuid 69b6b68e-4cb0-4e4e-9d3d-3c501eb78214))
+(no_connect (at 220.98 99.06) (uuid c6bdb36a-7a5d-46ca-a027-500b53cfd893))
+(no_connect (at 220.98 101.6) (uuid f15bd509-e74c-4582-b6fa-af970757e19e))
+(no_connect (at 220.98 104.14) (uuid 11d30856-a7fe-438b-88cb-0479708dd474))
+(no_connect (at 220.98 106.68) (uuid 38835b73-a762-4808-8c87-9e369f9f8d57))
+(no_connect (at 220.98 109.22) (uuid 82d0bb79-a810-4f7c-887f-683577fdaaea))
+(no_connect (at 220.98 111.76) (uuid ad67d752-e0a8-4df9-aed3-eb43cc7f1612))
+(no_connect (at 220.98 114.3) (uuid f7b38e1f-61e9-4a30-9f46-81a058fda5b0))
+(no_connect (at 220.98 116.84) (uuid 45b55c25-44b7-4275-a80e-43969bd04d0f))
+(wire (pts (xy 220.98 121.92) (xy 213.36 121.92)) (stroke (width 0) (type default)) (uuid e96e8a24-6de0-4b4a-91ba-12b1fc388246))
+(symbol (lib_id "Device:C") (at 213.36 125.73 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid a5ba42eb-65eb-4245-b573-c0923f7f8ac0) (property "Reference" "C14" (at 198.12 124.46 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "4.7u 10V" (at 198.12 127 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 213.36 125.73 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 213.36 125.73 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 213.36 125.73 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 66bd7352-f20b-4a5f-b34d-3b3cac97d48d)) (pin "2" (uuid d64abae8-bf07-4246-9b94-96e5b08098a1)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "C14") (unit 1)))))
+(symbol (lib_id "power:GND") (at 213.36 129.54 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid af879947-a426-4c27-8808-96b8aee137d4) (property "Reference" "#PWR38" (at 213.36 135.89 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 213.36 133.35 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 213.36 129.54 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 213.36 129.54 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 213.36 129.54 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 8c4d5ba7-e78f-4831-8b94-0cc865115156)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR38") (unit 1)))))
+(label "VCAP" (at 215.9 121.92 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 094e5ab8-f188-4330-93d1-875dec188756))
+(text "CAN bus" (exclude_from_sim no) (at 38.1 152.4 0) (effects (font (size 1.8 1.8) (bold yes)) (justify left bottom)) (uuid 69c5445c-27cc-4d24-b74e-cce1397ed43e))
+(symbol (lib_id "StrainGauge:TJA1441A") (at 60.96 165.1 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 76c47bd2-3039-4f50-bb7c-68a12738d4e6) (property "Reference" "U4" (at 50.8 154.94 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "TJA1441ATK" (at 64.96 154.94 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Package_SON:HVSON-8-1EP_3x3mm_P0.65mm_EP1.6x2.4mm" (at 60.96 165.1 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "https://www.nxp.com/docs/en/data-sheet/TJA1441.pdf" (at 60.96 165.1 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 60.96 165.1 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 474ab05d-123f-4a12-9e5d-6aa065422c3c)) (pin "2" (uuid 1407687d-8423-4bef-b35b-cdd2b20c6dba)) (pin "3" (uuid 07180dc1-489d-465b-819f-c3d473f31584)) (pin "4" (uuid 17b37f6b-3abf-439c-be42-09ec8878aac4)) (pin "5" (uuid 7c866021-60dd-4ad0-bd35-95af53ce4ebf)) (pin "6" (uuid 1e488743-5fc1-4a44-900f-557f9dbd1e24)) (pin "7" (uuid e66c768d-58b7-4cda-b3c5-427012976ac5)) (pin "8" (uuid 5b9e9382-547a-493b-b614-ee1914677c15)) (pin "9" (uuid 18e7176e-98d0-4b26-a44d-adef729cc291)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "U4") (unit 1)))))
+(wire (pts (xy 48.26 161.29) (xy 43.18 161.29)) (stroke (width 0) (type default)) (uuid 97a28717-7179-48ea-a2b6-84743f2a7dec))
+(label "CAN_TX" (at 43.18 161.29 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid 834769c0-c038-484c-af7c-2e3e48e13bae))
+(wire (pts (xy 48.26 163.83) (xy 43.18 163.83)) (stroke (width 0) (type default)) (uuid e113a67f-be5d-44b0-9925-581aa396b2f4))
+(label "CAN_RX" (at 43.18 163.83 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid 9f98bbdd-2f77-4cd4-a465-5b5e434ec0ad))
+(wire (pts (xy 48.26 168.91) (xy 45.72 168.91)) (stroke (width 0) (type default)) (uuid ab0e3b73-f1f1-4a79-be4e-3d11be6f766a))
+(wire (pts (xy 45.72 168.91) (xy 45.72 171.45)) (stroke (width 0) (type default)) (uuid 1c61ebbe-db59-4225-89b2-4c1219e1e726))
+(symbol (lib_id "power:GND") (at 45.72 171.45 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 1f4b08e6-4c95-475e-ac3d-e11884f665b5) (property "Reference" "#PWR39" (at 45.72 177.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 45.72 175.26 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 45.72 171.45 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 45.72 171.45 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 45.72 171.45 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 937b7c2c-21ca-4b19-b522-c808459c5492)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR39") (unit 1)))))
+(wire (pts (xy 73.66 162.56) (xy 78.74 162.56)) (stroke (width 0) (type default)) (uuid 2edbb9ca-fbe9-4184-9ef8-a08334fb3457))
+(label "CANH" (at 78.74 162.56 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid a4e8540b-0995-4596-9c6a-585d1545a267))
+(wire (pts (xy 73.66 167.64) (xy 78.74 167.64)) (stroke (width 0) (type default)) (uuid 913771ad-7790-4dac-ab43-7d9e067cc92f))
+(label "CANL" (at 78.74 167.64 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 32882d13-0e7a-4066-ad87-c11b5beec3c4))
+(wire (pts (xy 58.42 154.94) (xy 58.42 149.86)) (stroke (width 0) (type default)) (uuid 2fab3c66-391e-42af-bdae-71db51b32221))
+(symbol (lib_id "power:+5V") (at 58.42 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 515b435a-8abc-482f-b7af-c0c984b39739) (property "Reference" "#PWR40" (at 58.42 143.51 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+5V" (at 58.42 146.05 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 58.42 149.86 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 58.42 149.86 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 58.42 149.86 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid e268dc00-1c28-4ef5-b72d-73d163779428)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR40") (unit 1)))))
+(wire (pts (xy 63.5 154.94) (xy 63.5 149.86)) (stroke (width 0) (type default)) (uuid 0d48c282-6e09-46b5-b737-e6aac9765249))
+(symbol (lib_id "power:+3V3") (at 63.5 149.86 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 6cbd1cda-55c1-4c13-916a-be293ac7d099) (property "Reference" "#PWR41" (at 63.5 143.51 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3V3" (at 63.5 146.05 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 63.5 149.86 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 63.5 149.86 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 63.5 149.86 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 55f46bdd-df39-4ded-b5b8-4a1ade2d08b7)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR41") (unit 1)))))
+(symbol (lib_id "power:GND") (at 58.42 175.26 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid f5be12a4-2468-4ded-bf05-f586653e582b) (property "Reference" "#PWR42" (at 58.42 181.61 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 58.42 179.07 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 58.42 175.26 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 58.42 175.26 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 58.42 175.26 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 442ce7ae-4762-4483-a867-51025828ba57)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR42") (unit 1)))))
+(wire (pts (xy 63.5 175.26) (xy 63.5 177.8)) (stroke (width 0) (type default)) (uuid 6ef9285b-427b-4666-b808-3664a2fc31ea))
+(wire (pts (xy 63.5 177.8) (xy 58.42 177.8)) (stroke (width 0) (type default)) (uuid 50e0b3d0-4c0b-4560-8108-acab31fbeb50))
+(wire (pts (xy 58.42 177.8) (xy 58.42 175.26)) (stroke (width 0) (type default)) (uuid e8316f52-3e62-4c60-90db-b1c89a96334e))
+(junction (at 58.42 175.26) (diameter 0) (color 0 0 0 0) (uuid 5aa5767d-5459-4c4c-8c13-618abef99e00))
+(symbol (lib_id "power:+5V") (at 96.52 156.21 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 39a1c889-7bf3-44c2-8bd7-eef60abb7f0b) (property "Reference" "#PWR43" (at 96.52 149.86 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+5V" (at 96.52 152.4 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 96.52 156.21 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 96.52 156.21 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 96.52 156.21 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid e91c4289-e3ee-4f58-bac4-998749fbe6af)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR43") (unit 1)))))
+(symbol (lib_id "Device:C") (at 96.52 160.02 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid e64e8bc0-48b8-4430-bce0-9eb804e9c9d8) (property "Reference" "C16" (at 99.06 158.75 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 99.06 161.29 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (at 96.52 160.02 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 96.52 160.02 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 96.52 160.02 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid cd6cef53-c066-4108-a6fb-0155b0d4eeec)) (pin "2" (uuid 626c3e8e-b51e-47dc-9070-b442b82c9569)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "C16") (unit 1)))))
+(symbol (lib_id "power:GND") (at 96.52 163.83 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid acc40cfc-3648-46e3-bdd6-5de7e30653c6) (property "Reference" "#PWR44" (at 96.52 170.18 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 96.52 167.64 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 96.52 163.83 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 96.52 163.83 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 96.52 163.83 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 84ae0846-7f8f-4d07-ba88-2280b8ce4507)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR44") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 106.68 156.21 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid fc29c673-b74c-4f21-9b7e-0a30d4c50c9b) (property "Reference" "#PWR45" (at 106.68 149.86 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3V3" (at 106.68 152.4 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 106.68 156.21 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 106.68 156.21 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 106.68 156.21 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid a9a23096-e897-4abd-9c0c-501f06fb62fb)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR45") (unit 1)))))
+(symbol (lib_id "Device:C") (at 106.68 160.02 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 749b0404-d462-48f9-8d98-9d357cdafb0d) (property "Reference" "C17" (at 109.22 158.75 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 109.22 161.29 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (at 106.68 160.02 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 106.68 160.02 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 106.68 160.02 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 083ec10a-3348-4cdb-afa8-76d3534b55ff)) (pin "2" (uuid 348e765e-f337-40a6-bfcd-fd001a5d70a8)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "C17") (unit 1)))))
+(symbol (lib_id "power:GND") (at 106.68 163.83 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 60b0b9c3-6993-4d77-a915-842d1cfc8480) (property "Reference" "#PWR46" (at 106.68 170.18 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 106.68 167.64 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 106.68 163.83 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 106.68 163.83 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 106.68 163.83 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 67a1c2c6-8d72-4565-8e67-72e8fcf64484)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR46") (unit 1)))))
+(text "Debug" (exclude_from_sim no) (at 264.16 104.14 0) (effects (font (size 1.8 1.8) (bold yes)) (justify left bottom)) (uuid a0d6dab6-087b-4656-a8b3-b0fc1245dd18))
+(text "MCU clock" (exclude_from_sim no) (at 124.46 152.4 0) (effects (font (size 1.8 1.8) (bold yes)) (justify left bottom)) (uuid 431b139a-b1cc-458f-9069-53cc63aaf4ec))
+(symbol (lib_id "Device:Crystal_GND24") (at 139.7 165.1 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid dea5d020-4321-4185-bd5a-3e330cdeaffb) (property "Reference" "Y1" (at 139.7 157.48 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "16 MHz" (at 139.7 160.02 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm" (at 139.7 165.1 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 139.7 165.1 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 139.7 165.1 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid a49e1aba-66a9-4f00-95af-252ac9d43f6a)) (pin "2" (uuid 3e7524c2-5cc4-4b92-b0c0-8a00f07c3386)) (pin "3" (uuid 0c0dd53e-fcb3-4627-b45f-ac4183778b82)) (pin "4" (uuid 34ce1ba8-16ab-4fd4-9d70-7d548e6c1c25)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "Y1") (unit 1)))))
+(wire (pts (xy 135.89 165.1) (xy 129.54 165.1)) (stroke (width 0) (type default)) (uuid 86931ff9-4462-4442-9bcc-39e40bb587ff))
+(wire (pts (xy 143.51 165.1) (xy 149.86 165.1)) (stroke (width 0) (type default)) (uuid 864ea529-f2b8-421f-86ae-700422e6a2b6))
+(junction (at 129.54 165.1) (diameter 0) (color 0 0 0 0) (uuid 98384533-3050-427f-bbd6-64fe04db877a))
+(junction (at 149.86 165.1) (diameter 0) (color 0 0 0 0) (uuid d2d01939-d6f7-4c7c-97f1-33d0b8bf060f))
+(label "HSE_IN" (at 129.54 162.56 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid 7aeaed35-8ba8-479d-9071-7b411ecb6155))
+(wire (pts (xy 129.54 162.56) (xy 129.54 166.37)) (stroke (width 0) (type default)) (uuid 9e982821-b88e-4d50-a423-ef6e667db83f))
+(label "HSE_OUT" (at 149.86 162.56 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 9d45226e-eac3-4f08-9d43-18bc28dc64fb))
+(wire (pts (xy 149.86 162.56) (xy 149.86 166.37)) (stroke (width 0) (type default)) (uuid e35edade-de52-4fdb-a81b-c22c374a32da))
+(symbol (lib_id "Device:C") (at 129.54 170.18 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 879e8562-c442-45db-ba45-bb44795b18fe) (property "Reference" "C18" (at 121.92 168.91 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "10p" (at 121.92 171.45 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (at 129.54 170.18 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 129.54 170.18 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 129.54 170.18 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid c24b1867-7d06-4627-a36c-90e43dd3ae20)) (pin "2" (uuid 25a5463e-20ea-44d6-8f71-6dcc195db139)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "C18") (unit 1)))))
+(symbol (lib_id "power:GND") (at 129.54 173.99 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid b438b4d9-996b-4263-a5c9-e7cb2ee6fc3e) (property "Reference" "#PWR47" (at 129.54 180.34 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 129.54 177.8 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 129.54 173.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 129.54 173.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 129.54 173.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 5dcb4ce6-a1b6-445b-8644-b03afb7cbc39)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR47") (unit 1)))))
+(symbol (lib_id "Device:C") (at 149.86 170.18 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid dc100f97-6ae9-4010-baa5-6dd2cbe3599a) (property "Reference" "C19" (at 152.4 168.91 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "10p" (at 152.4 171.45 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (at 149.86 170.18 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 149.86 170.18 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 149.86 170.18 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 3312e6f3-1ded-4f47-9cfd-b84e86b38860)) (pin "2" (uuid 0f96cf0c-3892-4330-87d9-9c2b4d8a3c6e)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "C19") (unit 1)))))
+(symbol (lib_id "power:GND") (at 149.86 173.99 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid d59652be-8139-4aab-b845-d8019f3f43fe) (property "Reference" "#PWR48" (at 149.86 180.34 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 149.86 177.8 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 149.86 173.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 149.86 173.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 149.86 173.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 589eb27d-108a-4a19-b802-fff4800a4d03)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR48") (unit 1)))))
+(symbol (lib_id "power:GND") (at 139.7 170.18 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 0d48418f-6d94-4884-a79d-23e1d5665583) (property "Reference" "#PWR49" (at 139.7 176.53 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 139.7 173.99 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 139.7 170.18 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 139.7 170.18 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 139.7 170.18 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 0515e719-a8dc-4298-9a16-8530c0319b8c)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR49") (unit 1)))))
+(text "Boot" (exclude_from_sim no) (at 157.48 152.4 0) (effects (font (size 1.8 1.8) (bold yes)) (justify left bottom)) (uuid 4d89636d-acca-480a-b3eb-bee8f9a7d737))
+(label "BOOT0" (at 162.56 157.48 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid bd2950fe-ebfd-4497-9c0d-8345ffcae6e0))
+(wire (pts (xy 162.56 157.48) (xy 162.56 160.02)) (stroke (width 0) (type default)) (uuid e39ab520-8a13-4e8e-aecc-48420573725d))
+(symbol (lib_id "Device:R") (at 162.56 163.83 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 80b3c21a-3253-415a-a5db-8a1c750a0d40) (property "Reference" "R7" (at 165.1 162.56 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "10k" (at 165.1 165.1 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Resistor_SMD:R_0201_0603Metric" (at 162.56 163.83 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 162.56 163.83 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 162.56 163.83 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid c410302b-7d13-45cf-bfa5-5bcc8c6f68a5)) (pin "2" (uuid dbe0af18-60b6-4dba-a7a9-7fd5321cfcde)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "R7") (unit 1)))))
+(symbol (lib_id "power:GND") (at 162.56 167.64 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid d6b61825-510e-4262-b750-7b3dc6ba94c5) (property "Reference" "#PWR50" (at 162.56 173.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 162.56 171.45 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 162.56 167.64 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 162.56 167.64 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 162.56 167.64 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 3e42c50c-f8d8-4bc8-bcc7-878f051ed417)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR50") (unit 1)))))
+(label "NRST" (at 172.72 157.48 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid df1451c1-0a83-42ce-a498-cdeb0642db35))
+(wire (pts (xy 172.72 157.48) (xy 172.72 160.02)) (stroke (width 0) (type default)) (uuid d930be94-d616-4c5f-9b3b-c8117f7b02a9))
+(symbol (lib_id "Device:C") (at 172.72 163.83 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid a4098887-261d-4a4b-91d0-7dec0cf32769) (property "Reference" "C20" (at 175.26 162.56 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100n" (at 175.26 165.1 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Capacitor_SMD:C_0201_0603Metric" (at 172.72 163.83 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 172.72 163.83 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 172.72 163.83 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid e582655b-0d61-4552-b4c6-2e50274d51bc)) (pin "2" (uuid 6019ed15-7167-4d57-8370-58023a163794)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "C20") (unit 1)))))
+(symbol (lib_id "power:GND") (at 172.72 167.64 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 2647ecb8-e23d-43a1-9122-b8a3240137af) (property "Reference" "#PWR51" (at 172.72 173.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 172.72 171.45 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 172.72 167.64 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 172.72 167.64 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 172.72 167.64 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 61f80552-bed9-4868-acdb-7e83e7e37ef9)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR51") (unit 1)))))
+(symbol (lib_id "Connector_Generic:Conn_01x05") (at 271.78 119.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 80b900b2-454d-4b57-a652-c65c78a47bee) (property "Reference" "J3" (at 271.78 111.76 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "SWD" (at 271.78 129.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "StrainGauge:DebugPads_1x05" (at 271.78 119.38 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 271.78 119.38 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 271.78 119.38 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid b51324fe-3211-453a-aae1-dab5d724a8dd)) (pin "2" (uuid 62ffab9a-9e46-4599-8724-f968a88018a5)) (pin "3" (uuid 01d191b5-7c28-4014-8524-f9f711c89595)) (pin "4" (uuid 3c833ccc-04b8-4502-b290-2127b0ba2290)) (pin "5" (uuid 0053a2a2-4f46-41fe-a6ef-ef04e85212a2)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "J3") (unit 1)))))
+(symbol (lib_id "power:+3V3") (at 261.62 113.03 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 5a32046e-5c07-478f-9f17-849b768ecf47) (property "Reference" "#PWR52" (at 261.62 106.68 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3V3" (at 261.62 109.22 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 261.62 113.03 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 261.62 113.03 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 261.62 113.03 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 79d780a9-07ca-4354-9cc4-8e04b239553b)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR52") (unit 1)))))
+(wire (pts (xy 266.7 114.3) (xy 261.62 114.3)) (stroke (width 0) (type default)) (uuid 3dde3adf-7c9b-46e8-82e6-321c1163e5da))
+(wire (pts (xy 261.62 114.3) (xy 261.62 113.03)) (stroke (width 0) (type default)) (uuid bf089560-442c-4bbf-ac97-34a3eadcfc2c))
+(wire (pts (xy 266.7 116.84) (xy 261.62 116.84)) (stroke (width 0) (type default)) (uuid 950f3899-e582-4a77-9f5f-4356dfda2a88))
+(label "SWDIO" (at 261.62 116.84 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid 02e1d2d3-308c-47bc-8039-fd995baca6c9))
+(wire (pts (xy 266.7 119.38) (xy 261.62 119.38)) (stroke (width 0) (type default)) (uuid 348f90f3-1fb4-440c-822b-99c6ae564c9c))
+(label "SWCLK" (at 261.62 119.38 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid 53a48541-e786-4b58-8384-5e0d776dc4ff))
+(wire (pts (xy 266.7 121.92) (xy 261.62 121.92)) (stroke (width 0) (type default)) (uuid bc4e8701-dff6-4481-8bd9-4b8cafb38e23))
+(label "NRST" (at 261.62 121.92 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid 6af60fab-1ded-4f34-98fb-318cac1c260e))
+(wire (pts (xy 266.7 124.46) (xy 261.62 124.46)) (stroke (width 0) (type default)) (uuid 7b199d7e-9196-45ba-bb9d-9edf440b60e5))
+(wire (pts (xy 261.62 124.46) (xy 261.62 127)) (stroke (width 0) (type default)) (uuid 3c852816-eef9-4dab-bae5-dd2144c84fbe))
+(symbol (lib_id "power:GND") (at 261.62 127 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 44d6ddee-bcb2-4567-89a8-0614e65b60bc) (property "Reference" "#PWR53" (at 261.62 133.35 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 261.62 130.81 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 261.62 127 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 261.62 127 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 261.62 127 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid c317685c-92d7-4f81-8d71-3cd078dde5d3)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR53") (unit 1)))))
+(text "1 3V3\n2 SWDIO\n3 SWCLK\n4 NRST\n5 GND" (exclude_from_sim no) (at 275.59 127 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 7c62a10d-f14b-44a2-aec9-576451a74bb6))
+(sheet_instances (path "/" (page "1")))
+(embedded_fonts no)
+)

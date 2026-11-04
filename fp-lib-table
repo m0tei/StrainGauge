@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "StrainGauge")(type "KiCad")(uri "${KIPRJMOD}/StrainGauge.pretty")(options "")(descr "Board-end wire pads"))
+)

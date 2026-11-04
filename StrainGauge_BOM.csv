@@ -1,0 +1,14 @@
+Ref,Qty,Value,Manufacturer,MPN,Package,Side,Qualification,Max temp,Evidence
+U1,1,3.3 V LDO,TI,TLV73333PQDRVRQ1,WSON-6 2x2,Top,AEC-Q100 Grade 1,125 C ambient,TI data sheet SBVS283F
+U2,1,In-amp gain 201,TI,INA333QDGKRQ1,VSSOP-8,Top,AEC-Q100 Grade 1,125 C ambient,TI data sheet SBOS464B
+U3,1,VREF buffer,TI,OPA388QDBVRQ1,SOT-23-5,Bottom,AEC-Q100 Grade 1,125 C ambient,TI data sheet SBOS989A
+D1 D2,2,ESD diode,TI,TPD1E10B06QDPYRQ1,X1SON-2,Bottom,AEC-Q101,125 C ambient,TI data sheet SLVSDN7
+RN1,1,10k/10k 0.1% +/-5 ppm/K tracking,Vishay,ACASN1002U1002P1AT,ACAS 0606,Bottom,AEC-Q200,155 C (125 C for precision operation),Vishay doc 28770
+R1,1,499R 0.1% 25 ppm,Panasonic,ERA-2AEB4990X,0402,Top,AEC-Q200,155 C,Distributor listings
+R4,1,1k 1%,Panasonic,ERJ-1GNF1001C,0201,Top,AEC-Q200,125 C,Distributor listings
+R5 R6,2,100R 1%,Panasonic,ERJ-1GNF1000C,0201,Top,AEC-Q200,125 C,Distributor listings
+C1 C2,2,1u 10V X7S,Murata,GCM155C71A105KE38D,0402,Top,AEC-Q200,125 C,Distributor listings
+C3 C4 C7,3,100n 10V X7S,Murata,GCM033C71A104KE02D,0201,C3 top C4 C7 bottom,AEC-Q200,125 C,Distributor listings
+C5,1,330n 16V X7R,Murata,GCM188R71C334KA37D,0603,Bottom,AEC-Q200,125 C,Distributor listing
+C6,1,10n 10V X7R,Murata,GCM033R71A103KA03D,0201,Top,AEC-Q200,125 C,Distributor listings
+FB1 FB2,2,600R at 100 MHz 0.9 A,Murata,BLM15PX601SH1D,0402,Top,AEC-Q200,125 C,Murata BLM15 SH series spec

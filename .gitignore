@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# KiCad local history, backups and per-user state
+.history/
+*-backups/
+*.kicad_prl
+fp-info-cache
+*.lck
+~*.lck
+_autosave-*
+*.bak
+*.bck
+*.kicad_sch-bak
+*.kicad_pcb-bak
