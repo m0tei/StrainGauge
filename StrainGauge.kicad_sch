@@ -1409,258 +1409,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_Pack04_Split"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "RN"
-				(at 2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R_Pack04_Split"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "4 resistor network, parallel topology, split"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "R network parallel topology isolated"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "DIP* SOIC* R*Array*Concave* R*Array*Convex* MSOP*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_Pack04_Split_0_1"
-				(rectangle
-					(start 1.016 2.54)
-					(end -1.016 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_Pack04_Split_1_1"
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "R1.1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "R1.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "R_Pack04_Split_2_1"
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "R2.1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "R2.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "R_Pack04_Split_3_1"
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "R3.1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "R3.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "R_Pack04_Split_4_1"
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "R4.1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "R4.2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R_Variable"
 			(pin_numbers
 				(hide yes)
@@ -2936,12 +2684,6 @@
 		(uuid "985cfdd0-7f8a-4f2b-8c61-4b1b30b0bec4")
 	)
 	(junction
-		(at 177.8 135.89)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a031d684-3d5b-4641-bd86-a15c558db709")
-	)
-	(junction
 		(at 193.04 111.76)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3012,14 +2754,6 @@
 			(type default)
 		)
 		(uuid "0dd9cf3d-c23b-441c-a4dc-09483b9d9a8c")
-	)
-	(wire
-		(pts (xy 177.8 121.92) (xy 177.8 125.73))
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14de3f16-d6ba-4c56-8c92-fb9d14bb7d4b")
 	)
 	(wire
 		(pts
@@ -3212,14 +2946,6 @@
 		(uuid "4ca1e6d2-d390-479d-bbbc-13ac6f0c3d83")
 	)
 	(wire
-		(pts (xy 175.26 116.84) (xy 175.26 135.89))
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57005e64-deb1-4fa3-8724-dfab996192f8")
-	)
-	(wire
 		(pts
 			(xy 139.7 58.42) (xy 137.16 58.42)
 		)
@@ -3258,14 +2984,6 @@
 			(type default)
 		)
 		(uuid "5f8f24e7-a48c-4d76-9e07-ee2f855d3c74")
-	)
-	(wire
-		(pts (xy 175.26 135.89) (xy 177.8 135.89))
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64897e6a-efde-4c5f-8d3c-dc58b4b55543")
 	)
 	(wire
 		(pts
@@ -3439,16 +3157,6 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 114.3) (xy 177.8 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa5aef5f-6914-4666-b225-e6bb29ea2bbf")
-	)
-	(wire
-		(pts
 			(xy 45.72 96.52) (xy 66.04 96.52)
 		)
 		(stroke
@@ -3556,14 +3264,6 @@
 			(type default)
 		)
 		(uuid "d43b6ec6-eca1-49fd-9c89-2d8f5a7a44aa")
-	)
-	(wire
-		(pts (xy 177.8 147.32) (xy 177.8 149.86))
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d776afb5-1f8d-4a3b-ad8e-143f668c95c7")
 	)
 	(wire
 		(pts
@@ -3796,7 +3496,7 @@
 		(uuid "bda6f2c1-6073-42d5-9988-aa5e9162e38c")
 	)
 	(label "VREF"
-		(at 177.8 149.86 0)
+		(at 177.8 142.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5689,117 +5389,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Pack04_Split")
-		(at 177.8 143.51 180)
-		(unit 4)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5bbfa10d-8e8d-41aa-9a0a-092777f18445")
-		(property "Reference" "RN2"
-			(at 179.705 142.875 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "499R/49k9 0.1%"
-			(at 179.705 144.145 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "StrainGauge:ACAS_0612"
-			(at 177.8 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/doc?28770"
-			(at 177.8 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 177.8 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "ACASA4990S4992P1AT"
-			(at 177.8 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "58ec4e90-6283-4de8-9e73-e33b251ac289")
-		)
-		(pin "5"
-			(uuid "c237577d-e809-46b3-9453-354c08660d99")
-		)
-		(pin "1"
-			(uuid "3481f1d7-d602-484e-81d1-260a8aba599b")
-		)
-		(pin "8"
-			(uuid "7c073fc8-ab9c-44f7-a15d-aae6cbd92f0e")
-		)
-		(pin "2"
-			(uuid "108038b6-e6b1-473d-8749-d532a91d6e33")
-		)
-		(pin "7"
-			(uuid "2fa6e90a-6bad-48e0-a531-b603a9e089cf")
-		)
-		(pin "3"
-			(uuid "bf7cfab2-0c87-4ac3-ad21-64eefa87bfca")
-		)
-		(pin "6"
-			(uuid "e0aab06a-9c53-4b4c-9e9e-fc2d8d583dac")
-		)
-		(instances
-			(project "StrainGauge"
-				(path "/868f19cb-b342-446a-9562-22327f25c295"
-					(reference "RN2")
-					(unit 4)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Variable")
 		(at 66.04 119.38 0)
 		(unit 1)
@@ -6912,117 +6501,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Pack04_Split")
-		(at 177.8 118.11 180)
-		(unit 2)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b96285ac-af1f-415d-9e38-6fbe97ef17c4")
-		(property "Reference" "RN2"
-			(at 179.705 117.475 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "499R/49k9 0.1%"
-			(at 179.705 118.745 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "StrainGauge:ACAS_0612"
-			(at 177.8 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/doc?28770"
-			(at 177.8 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 177.8 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "ACASA4990S4992P1AT"
-			(at 177.8 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d98815fa-6615-4241-84b0-8ac9a48f5694")
-		)
-		(pin "7"
-			(uuid "ffd36145-c15e-4e48-ad88-b6527f177b19")
-		)
-		(pin "1"
-			(uuid "934302de-41bd-4d80-85e7-af1ef77ef996")
-		)
-		(pin "8"
-			(uuid "777499c0-efc9-49f4-a46b-0cd46ce88699")
-		)
-		(pin "3"
-			(uuid "b20378b0-190a-459a-9761-2f3044eb85b0")
-		)
-		(pin "6"
-			(uuid "45492b85-6677-4716-b30d-54256d721f65")
-		)
-		(pin "4"
-			(uuid "dfbfbe70-0148-455e-8ff0-19eb8dc221d2")
-		)
-		(pin "5"
-			(uuid "bf75c5a4-c650-468c-ae19-1d1679950a40")
-		)
-		(instances
-			(project "StrainGauge"
-				(path "/868f19cb-b342-446a-9562-22327f25c295"
-					(reference "RN2")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 193.04 119.38 0)
 		(unit 1)
@@ -7094,228 +6572,6 @@
 			(project "StrainGauge"
 				(path "/868f19cb-b342-446a-9562-22327f25c295"
 					(reference "#PWR21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Pack04_Split")
-		(at 177.8 129.54 0)
-		(unit 3)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c3429114-2005-42ba-a93c-f3cc71644ed3")
-		(property "Reference" "RN2"
-			(at 179.705 128.905 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "499R/49k9 0.1%"
-			(at 179.705 130.175 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "StrainGauge:ACAS_0612"
-			(at 177.8 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/doc?28770"
-			(at 177.8 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 177.8 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "ACASA4990S4992P1AT"
-			(at 177.8 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "dc88121a-7e5d-46c9-b239-e5a9ace202bf")
-		)
-		(pin "6"
-			(uuid "296845ba-4c03-4223-883a-a98bb432a625")
-		)
-		(pin "1"
-			(uuid "faae14ed-0023-4991-9710-db96e7737f57")
-		)
-		(pin "8"
-			(uuid "574b6029-4bd1-409b-b43c-8f85df62714e")
-		)
-		(pin "2"
-			(uuid "b9b971ad-a76b-4deb-b831-6c6e2dd2a53a")
-		)
-		(pin "7"
-			(uuid "4c466b6e-d47f-40fc-bde5-aa32d99e2568")
-		)
-		(pin "4"
-			(uuid "f2e6ee9b-70f4-4419-ace2-3c57ae8d0482")
-		)
-		(pin "5"
-			(uuid "462e49b0-1ced-4eb0-970b-74f783b3bfd7")
-		)
-		(instances
-			(project "StrainGauge"
-				(path "/868f19cb-b342-446a-9562-22327f25c295"
-					(reference "RN2")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Pack04_Split")
-		(at 187.96 135.89 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "fc37de03-3b68-4004-96b8-4e780a114d2b")
-		(property "Reference" "RN2"
-			(at 189.865 135.255 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "499R/49k9 0.1%"
-			(at 189.865 136.525 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "StrainGauge:ACAS_0612"
-			(at 177.8 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/doc?28770"
-			(at 177.8 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 177.8 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "ACASA4990S4992P1AT"
-			(at 177.8 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "fe63b48a-62e5-4533-93bd-a913c2d6005d")
-		)
-		(pin "6"
-			(uuid "2e65ec73-bac7-4b58-8bfa-0d8bd2e3885a")
-		)
-		(pin "1"
-			(uuid "cee9cc23-11d6-4fdb-96e7-3fbdc4e47e7c")
-		)
-		(pin "8"
-			(uuid "3d6df89e-c0e9-4665-b681-b7ee0c1b55d9")
-		)
-		(pin "2"
-			(uuid "f24a9a8d-0b94-4c96-b0b1-a7c9c5a7520a")
-		)
-		(pin "7"
-			(uuid "9952e2b0-eef6-474b-9827-fabc49d9124b")
-		)
-		(pin "4"
-			(uuid "c45df9f5-0d69-434b-aa7f-618bf1499dbc")
-		)
-		(pin "5"
-			(uuid "ecbd3c0e-5102-4331-bddf-8c197eefccdf")
-		)
-		(instances
-			(project "StrainGauge"
-				(path "/868f19cb-b342-446a-9562-22327f25c295"
-					(reference "RN2")
 					(unit 1)
 				)
 			)
@@ -8633,16 +7889,16 @@
 			)
 		)
 	)
-	(wire (pts (xy 177.8 133.35) (xy 177.8 135.89)) (stroke (width 0) (type default)) (uuid "3c1ec84a-a92d-4827-8cb3-c1db5048797b"))
-	(wire (pts (xy 177.8 135.89) (xy 177.8 139.7)) (stroke (width 0) (type default)) (uuid "9c9563a0-ad34-48a4-9736-8ff4bb74d973"))
 	(label "VO" (at 173.99 111.76 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid "ce1949b3-68dc-4910-9e69-e82d13d2e776"))
-	(no_connect (at 187.96 132.08) (uuid "206aa376-35a9-4e84-9b24-a1fa3cf9ab7a"))
-	(no_connect (at 187.96 139.7) (uuid "8939924d-1dfe-4ea8-b82c-8c7781749b92"))
-	(text "49k9" (exclude_from_sim no) (at 179.705 119.38 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "fbae8ca1-1f57-4df2-bebe-86f004bab798"))
-	(text "49k9" (exclude_from_sim no) (at 179.705 130.81 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "750c2af5-a58c-410d-928d-a6debb971206"))
-	(text "499R" (exclude_from_sim no) (at 179.705 144.78 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "fe1d5abb-dc28-4e60-99e5-bc881402c1aa"))
-	(text "unused" (exclude_from_sim no) (at 189.865 137.16 0) (effects (font (size 1.27 1.27)) (justify left)) (uuid "01ddbfc4-4b15-4c2f-befc-3c4bce8bcec9"))
-	(text "One array, so RF and RG track. RF = 49k9 + 49k9, RG = 499R.\nGain = 1 + RF/RG = 201." (exclude_from_sim no) (at 182.88 151.13 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "f3b3ae15-4e0e-4d2d-a9d7-743e324a465b"))
+	(symbol (lib_id "Device:R") (at 177.8 123.19 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "e2c2beee-a9fe-42ce-9071-2b9d89d44670") (property "Reference" "R2" (at 180.34 123.19 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "100k 0.05%" (at 180.34 125.73 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 177.8 123.19 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 177.8 123.19 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 177.8 123.19 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "MPN" "RG1005N-104-W-T1" (at 177.8 123.19 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid "8862af05-4d64-49e7-8bba-9a50b544310e")) (pin "2" (uuid "0a1e94a5-f02c-41b8-9d4c-1a14922e9810")) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "R2") (unit 1)))))
+	(symbol (lib_id "Device:R") (at 177.8 135.89 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid "1548aa05-17da-4a78-bb70-2f2f5254bd4b") (property "Reference" "R1" (at 180.34 134.62 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "499R 0.05%" (at 180.34 137.16 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 177.8 135.89 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 177.8 135.89 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 177.8 135.89 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "MPN" "RG1005N-4990-W-T1" (at 177.8 135.89 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid "61ee7112-6af6-44c4-a3da-b74d1e6b90e2")) (pin "2" (uuid "46cddcfa-5c34-4c59-84bf-956226fb49cc")) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "R1") (unit 1)))))
+	(wire (pts (xy 177.8 111.76) (xy 177.8 119.38)) (stroke (width 0) (type default)) (uuid "3ce7fd79-4e20-4677-b743-6d84410319cf"))
+	(wire (pts (xy 177.8 127) (xy 177.8 132.08)) (stroke (width 0) (type default)) (uuid "10a472bf-00e8-4d34-9b71-9c4ae0c98194"))
+	(wire (pts (xy 177.8 139.7) (xy 177.8 142.24)) (stroke (width 0) (type default)) (uuid "513604dd-7789-48d8-a48e-b5fff94b3ba6"))
+	(wire (pts (xy 175.26 116.84) (xy 175.26 129.54)) (stroke (width 0) (type default)) (uuid "760aefd7-05f5-4f4b-b8e3-0c0dcd7ca462"))
+	(wire (pts (xy 175.26 129.54) (xy 177.8 129.54)) (stroke (width 0) (type default)) (uuid "d7d0d657-5caf-44dc-a36f-d52640af9659"))
+	(junction (at 177.8 129.54) (diameter 0) (color 0 0 0 0) (uuid "38c4d2ed-5606-4de6-9dc1-e27c3a180b40"))
+	(text "R1, R2: +/-10 ppm/K, placed side by side so they track.\nGain = 1 + R2/R1 = 201." (exclude_from_sim no) (at 182.88 143.51 0) (effects (font (size 1.27 1.27)) (justify left top)) (uuid "f9191d3f-ab1e-4f9f-988d-279304d1cef2"))
 	(sheet_instances
 		(path "/"
 			(page "1")
