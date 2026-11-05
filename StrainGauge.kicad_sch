@@ -6,50 +6,39 @@
 (paper "A4")
 (title_block (title "Strain gauge full-bridge amplifier") (comment 1 "Gain 201: 0.86 mV/ue, 1.65 V at zero strain"))
 (lib_symbols
-	(symbol "Amplifier_Instrumentation:INA333xxDGK"
+	(symbol "StrainGauge:MCP6N16-100" (pin_names (offset 0.127)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property "Reference" "U" (at 0 9.525 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "MCP6N16-100E/MS" (at 0 -9.525 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "StrainGauge:Microchip_MS_MSOP-8" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/20005318A.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "Zero-drift instrumentation amplifier, minimum gain 100, gain set by RF/RG" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol "MCP6N16-100_0_1" (rectangle (start -5.08 6.35) (end 7.62 -6.35) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "MCP6N16-100_1_1" (pin input line (at -7.62 0 0) (length 2.54) (name "EN" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -7.62 -5.08 0) (length 2.54) (name "VIM" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin input line (at -7.62 5.08 0) (length 2.54) (name "VIP" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -7.62 90) (length 1.27) (name "VSS" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin input line (at 2.54 -7.62 90) (length 1.27) (name "VREF" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27))))) (pin input line (at 10.16 -5.08 180) (length 2.54) (name "VFG" (effects (font (size 1.27 1.27)))) (number "6" (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 0 180) (length 2.54) (name "VOUT" (effects (font (size 1.27 1.27)))) (number "7" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 7.62 270) (length 1.27) (name "VDD" (effects (font (size 1.27 1.27)))) (number "8" (effects (font (size 1.27 1.27))))) ) (embedded_fonts no))
+	(symbol "Device:R_Pack04_Split"
 		(pin_names
-			(offset 0.127)
+			(offset 0)
+			(hide yes)
 		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "U"
-			(at 3.81 3.175 0)
+		(property "Reference" "RN"
+			(at 2.032 0 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "INA333xxDGK"
-			(at 3.81 -3.175 0)
+		(property "Value" "R_Pack04_Split"
+			(at 0 0 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
-			(at 0 -7.62 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina333.pdf"
-			(at 2.54 0 0)
+		(property "Footprint" ""
+			(at -2.032 0 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(hide yes)
@@ -59,7 +48,7 @@
 				)
 			)
 		)
-		(property "Description" "Zero Drift, Micropower Instrumentation Amplifier G = 1 + 100kOhm/Rg, VSSOP-8"
+		(property "Datasheet" ""
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70,7 +59,7 @@
 				)
 			)
 		)
-		(property "ki_keywords" "instrumentation opamp amplifier"
+		(property "Description" "4 resistor network, parallel topology, split"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -81,7 +70,7 @@
 				)
 			)
 		)
-		(property "ki_fp_filters" "VSSOP*3x3mm*P0.65mm*"
+		(property "ki_keywords" "R network parallel topology isolated"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -92,25 +81,35 @@
 				)
 			)
 		)
-		(symbol "INA333xxDGK_0_1"
-			(polyline
-				(pts
-					(xy 7.62 0) (xy -5.08 6.35) (xy -5.08 -6.35) (xy 7.62 0)
+		(property "ki_fp_filters" "DIP* SOIC* R*Array*Concave* R*Array*Convex* MSOP*"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
 				)
+			)
+		)
+		(symbol "R_Pack04_Split_0_1"
+			(rectangle
+				(start 1.016 2.54)
+				(end -1.016 -2.54)
 				(stroke
 					(width 0.254)
 					(type default)
 				)
 				(fill
-					(type background)
+					(type none)
 				)
 			)
 		)
-		(symbol "INA333xxDGK_1_1"
+		(symbol "R_Pack04_Split_1_1"
 			(pin passive line
-				(at -7.62 2.54 0)
-				(length 2.54)
-				(name "Rg"
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "R1.1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -125,118 +124,10 @@
 					)
 				)
 			)
-			(pin input line
-				(at -7.62 -5.08 0)
-				(length 2.54)
-				(name "-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -7.62 5.08 0)
-				(length 2.54)
-				(name "+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -7.62 90)
-				(length 3.81)
-				(name "V-"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at 2.54 -7.62 90)
-				(length 5.08)
-				(name "Ref"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin output line
-				(at 10.16 0 180)
-				(length 2.54)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 7.62 270)
-				(length 3.81)
-				(name "V+"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin passive line
-				(at -7.62 -2.54 0)
-				(length 2.54)
-				(name "Rg"
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "R1.2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -252,185 +143,11 @@
 				)
 			)
 		)
-		(embedded_fonts no)
-	)
-(symbol "StrainGauge:TLV73333PDRV"
-		(pin_names
-			(offset 0.254)
-		)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(duplicate_pin_numbers_are_jumpers no)
-		(property "Reference" "U"
-			(at -3.81 5.715 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "TLV73333PQDRVRQ1"
-			(at 0 5.715 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm"
-			(at 0 8.255 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/gpn/TLV733P-Q1"
-			(at 0 1.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "200mA Low Dropout Voltage Regulator, Fixed Output 1.2V, WSON6"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_keywords" "200mA LDO Regulator Fixed Positive"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "ki_fp_filters" "WSON*"
-			(at 0 0 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(symbol "TLV73333PDRV_0_1"
-			(rectangle
-				(start -5.08 4.445)
-				(end 5.08 -5.08)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type background)
-				)
-			)
-		)
-		(symbol "TLV73333PDRV_1_1"
-			(pin power_in line
-				(at -7.62 2.54 0)
-				(length 2.54)
-				(name "IN"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 -7.62 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 2.54 -7.62 90)
-				(length 2.54)
-				(name "GND"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 7.62 2.54 180)
-				(length 2.54)
-				(name "OUT"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin no_connect line
-				(at 7.62 0 180)
-				(length 2.54)
-				(hide yes)
-				(name "NC"
+		(symbol "R_Pack04_Split_2_1"
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "R2.1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -445,18 +162,17 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at -2.54 -5.08 90)
-				(length 2.54)
-				(hide yes)
-				(name "NC"
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "R2.2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "5"
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -464,10 +180,50 @@
 					)
 				)
 			)
-			(pin input line
-				(at -7.62 0 0)
-				(length 2.54)
-				(name "EN"
+		)
+		(symbol "R_Pack04_Split_3_1"
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "R3.1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "R3.2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "R_Pack04_Split_4_1"
+			(pin passive line
+				(at 0 -3.81 90)
+				(length 1.27)
+				(name "R4.1"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -482,9 +238,28 @@
 					)
 				)
 			)
+			(pin passive line
+				(at 0 3.81 270)
+				(length 1.27)
+				(name "R4.2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 		)
 		(embedded_fonts no)
 	)
+(symbol "StrainGauge:TPS7A2033PDBV" (pin_names (offset 0.254)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property "Reference" "U" (at -3.81 5.715 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "TPS7A2033PDBVR" (at 0 5.715 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "StrainGauge:TI_DBV0005A_SOT-23-5" (at 0 8.255 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a20.pdf" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "300 mA low-noise LDO, fixed 3.3 V output, SOT-23-5" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol "TPS7A2033PDBV_0_1" (rectangle (start -5.08 4.445) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol "TPS7A2033PDBV_1_1" (pin power_in line (at -7.62 2.54 0) (length 2.54) (name "IN" (effects (font (size 1.27 1.27)))) (number "1" (effects (font (size 1.27 1.27))))) (pin input line (at -7.62 0 0) (length 2.54) (name "EN" (effects (font (size 1.27 1.27)))) (number "3" (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -7.62 90) (length 2.54) (name "GND" (effects (font (size 1.27 1.27)))) (number "2" (effects (font (size 1.27 1.27))))) (pin no_connect line (at 7.62 0 180) (length 2.54) (name "NC" (effects (font (size 1.27 1.27)))) (number "4" (effects (font (size 1.27 1.27))))) (pin power_out line (at 7.62 2.54 180) (length 2.54) (name "OUT" (effects (font (size 1.27 1.27)))) (number "5" (effects (font (size 1.27 1.27)))))) (embedded_fonts no))
 	(symbol "Device:R_Pack02_Split"
 		(pin_names
 			(offset 0)
@@ -2562,7 +2337,7 @@
 (symbol (lib_id "power:PWR_FLAG") (at 22.86 55.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid f5faf1c1-30ff-49fc-af67-c0d6dedcaa0f) (property "Reference" "#FLG04" (at 22.86 49.53 0) (show_name no) (do_not_autoplace no) (hide yes) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "PWR_FLAG" (at 22.86 52.07 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 22.86 55.88 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 22.86 55.88 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 22.86 55.88 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 7af20f33-de55-42c8-bceb-652e9b4da89b)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#FLG04") (unit 1)))))
 (wire (pts (xy 22.86 55.88) (xy 22.86 58.42)) (stroke (width 0) (type default)) (uuid 98fe53e6-edbc-46af-adbb-aa1955b5f3c1))
 (symbol (lib_id "power:GND") (at 22.86 58.42 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid d1f784b6-5c7e-4248-8786-3e75e9985ad4) (property "Reference" "#PWR05" (at 22.86 64.77 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 22.86 62.23 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 22.86 58.42 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 22.86 58.42 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 22.86 58.42 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 3c5b6416-caae-464d-9551-2e240299adfc)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR05") (unit 1)))))
-(symbol (lib_id "StrainGauge:TLV73333PDRV") (at 76.2 50.8 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid dd75f29b-badb-4cac-bd49-2d497e83ced4) (property "Reference" "U1" (at 76.2 41.91 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "TLV73333PQDRVRQ1" (at 76.2 44.45 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "Package_SON:WSON-6-1EP_2x2mm_P0.65mm_EP1x1.6mm" (at 76.2 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tlv700.pdf" (at 76.2 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 76.2 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "MPN" "TLV73333PQDRVRQ1" (at 76.2 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 478fa0db-42e6-40d2-8689-ad0038201200)) (pin "2" (uuid b9ce0ae6-40cc-4546-8ef8-4e5580c8487e)) (pin "3" (uuid 80f1d491-1680-4046-b476-17a8410ed59e)) (pin "4" (uuid 54cce012-f733-4f79-b1e0-27506bbac71f)) (pin "5" (uuid 6028b463-6990-4231-924e-3db0a7494ab1)) (pin "6" (uuid 87c330c0-665f-4d77-b65b-d3e19d42c5a3)) (pin "7" (uuid edb33dba-bd5d-4a3b-94cd-6505db5197d8)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "U1") (unit 1)))))
+(symbol (lib_id "StrainGauge:TPS7A2033PDBV") (at 76.2 50.8 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid dd75f29b-badb-4cac-bd49-2d497e83ced4) (property "Reference" "U1" (at 76.2 41.91 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "TPS7A2033PDBVR" (at 76.2 44.45 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "StrainGauge:TI_DBV0005A_SOT-23-5" (at 76.2 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps7a20.pdf" (at 76.2 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 76.2 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "MPN" "TPS7A2033PDBVR" (at 76.2 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 478fa0db-42e6-40d2-8689-ad0038201200)) (pin "2" (uuid b9ce0ae6-40cc-4546-8ef8-4e5580c8487e)) (pin "3" (uuid 80f1d491-1680-4046-b476-17a8410ed59e)) (pin "4" (uuid 54cce012-f733-4f79-b1e0-27506bbac71f)) (pin "5" (uuid 6028b463-6990-4231-924e-3db0a7494ab1)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "U1") (unit 1)))))
 (symbol (lib_id "power:+5V") (at 60.96 45.72 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 500dcc10-99df-4b9e-9a14-a6773d91a19e) (property "Reference" "#PWR06" (at 60.96 39.37 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+5V" (at 60.96 41.91 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 60.96 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 60.96 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 60.96 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 5fd23d8b-7265-498a-a9cc-29b7fd0935ef)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR06") (unit 1)))))
 (wire (pts (xy 60.96 45.72) (xy 60.96 49.53)) (stroke (width 0) (type default)) (uuid 18f0ad88-ad55-43fa-9ca3-251a10812782))
 (wire (pts (xy 60.96 48.26) (xy 68.58 48.26)) (stroke (width 0) (type default)) (uuid ffb16238-2195-48b7-86be-31d1ab0a3275))
@@ -2630,16 +2405,9 @@
 (symbol (lib_id "power:GND") (at 93.98 119.38 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 07bba76b-cb8f-4bd4-bc15-6c4a1c8fa6b4) (property "Reference" "#PWR17" (at 93.98 125.73 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "GND" (at 93.98 123.19 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 93.98 119.38 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 93.98 119.38 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 93.98 119.38 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid f8e440ae-f671-47e8-b068-fb08d22ddc2a)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR17") (unit 1)))))
 (text "1 EXC+\n2 SIG+\n3 SIG-\n4 EXC-" (exclude_from_sim no) (at 99.06 132.08 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 51181e55-23d1-4802-a86b-2534ea288250))
 (text "Amplifier, gain 201" (exclude_from_sim no) (at 142.24 86.36 0) (effects (font (size 1.8 1.8) (bold yes)) (justify left bottom)) (uuid 58f9d1da-99a7-4045-bf3e-402ec7106369))
-(symbol (lib_id "Amplifier_Instrumentation:INA333xxDGK") (at 162.56 111.76 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 543dd5b0-164b-4e01-9c11-79685acf1f3d) (property "Reference" "U2" (at 172.72 114.3 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "INA333QDGKRQ1" (at 172.72 116.84 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm" (at 162.56 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "https://www.ti.com/lit/ds/symlink/ina333.pdf" (at 162.56 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 162.56 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "MPN" "INA333QDGKRQ1" (at 162.56 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid d3997df2-403c-4ac2-80f5-1ae120776d6a)) (pin "2" (uuid 7278ca70-018a-4dbd-9af7-3efe7dcfaa08)) (pin "3" (uuid 8a87e190-41a6-42ef-b886-302e33319530)) (pin "4" (uuid 869c2457-dc5e-476c-aa3f-9cb28a7ff137)) (pin "5" (uuid befbcb5d-c6a6-42fe-a9a8-25053654a584)) (pin "6" (uuid 3af2159b-c896-42fa-816a-8ecc412f7059)) (pin "7" (uuid ee2c314f-df19-446d-b9b7-3c2ee02a076f)) (pin "8" (uuid 007a4d1c-7966-4a98-96b9-8c67dd1dd259)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "U2") (unit 1)))))
+(symbol (lib_id "StrainGauge:MCP6N16-100") (at 162.56 111.76 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 543dd5b0-164b-4e01-9c11-79685acf1f3d) (property "Reference" "U2" (at 143.51 121.92 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "MCP6N16-100E/MS" (at 143.51 124.46 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "StrainGauge:Microchip_MS_MSOP-8" (at 162.56 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "https://ww1.microchip.com/downloads/en/DeviceDoc/20005318A.pdf" (at 162.56 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 162.56 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "MPN" "MCP6N16-100E/MS" (at 162.56 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid d3997df2-403c-4ac2-80f5-1ae120776d6a)) (pin "2" (uuid 7278ca70-018a-4dbd-9af7-3efe7dcfaa08)) (pin "3" (uuid 8a87e190-41a6-42ef-b886-302e33319530)) (pin "4" (uuid 869c2457-dc5e-476c-aa3f-9cb28a7ff137)) (pin "5" (uuid befbcb5d-c6a6-42fe-a9a8-25053654a584)) (pin "6" (uuid 3af2159b-c896-42fa-816a-8ecc412f7059)) (pin "7" (uuid ee2c314f-df19-446d-b9b7-3c2ee02a076f)) (pin "8" (uuid 007a4d1c-7966-4a98-96b9-8c67dd1dd259)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "U2") (unit 1)))))
 (wire (pts (xy 154.94 106.68) (xy 142.24 106.68)) (stroke (width 0) (type default)) (uuid e8f869af-39c1-41dd-b970-a8bc9caab024))
 (wire (pts (xy 154.94 116.84) (xy 142.24 116.84)) (stroke (width 0) (type default)) (uuid fc942fc3-49a3-4e5d-ba79-36183b06329d))
-(symbol (lib_id "Device:R") (at 147.32 111.76 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 379bfdab-0210-4760-9d59-e80b24497fbb) (property "Reference" "R1" (at 144.78 110.49 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify right))) (property "Value" "499R 0.1%" (at 144.78 113.03 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify right))) (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 147.32 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 147.32 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 147.32 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "MPN" "ERA-2AEB4990X" (at 147.32 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid d708fa25-6aa0-4fff-a88a-fb3d60c8ef6f)) (pin "2" (uuid f884d64b-d5d5-4080-b81b-ec90dc95f18a)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "R1") (unit 1)))))
-(wire (pts (xy 147.32 107.95) (xy 149.86 107.95)) (stroke (width 0) (type default)) (uuid 4c847e23-4339-488b-be6f-88fa6624aef8))
-(wire (pts (xy 149.86 107.95) (xy 149.86 109.22)) (stroke (width 0) (type default)) (uuid d4fd288e-89b1-491e-9bf4-1795de2af33c))
-(wire (pts (xy 149.86 109.22) (xy 154.94 109.22)) (stroke (width 0) (type default)) (uuid ae889bc1-4691-4e15-99a9-7d21bdf3efe2))
-(wire (pts (xy 147.32 115.57) (xy 149.86 115.57)) (stroke (width 0) (type default)) (uuid 304ed9dd-35e4-4a64-92c0-768fa49d6547))
-(wire (pts (xy 149.86 115.57) (xy 149.86 114.3)) (stroke (width 0) (type default)) (uuid caa11aa0-cde4-4a0e-bcee-7d114ffae581))
-(wire (pts (xy 149.86 114.3) (xy 154.94 114.3)) (stroke (width 0) (type default)) (uuid b7a4922c-0463-4d4b-a143-ebb712126233))
 (symbol (lib_id "power:+3V3") (at 162.56 93.98 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid b83bb3be-98ea-4812-bc0e-7d18740ac90f) (property "Reference" "#PWR18" (at 162.56 87.63 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3V3" (at 162.56 90.17 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 162.56 93.98 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 162.56 93.98 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 162.56 93.98 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid dd840ecf-8b5d-49b3-8c10-ca6039597dc3)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR18") (unit 1)))))
 (wire (pts (xy 162.56 93.98) (xy 162.56 104.14)) (stroke (width 0) (type default)) (uuid 31f92445-a80c-4ad3-8003-183ef02aa1a2))
 (wire (pts (xy 162.56 96.52) (xy 175.26 96.52)) (stroke (width 0) (type default)) (uuid 96f7a956-61ff-4ee2-a48d-1800d39c5560))
@@ -2673,7 +2441,7 @@
 (text "VREF buffer" (exclude_from_sim no) (at 137.16 38.1 0) (effects (font (size 1.8 1.8) (bold yes)) (justify left bottom)) (uuid f3b7d9d3-6b73-473f-98d9-a4cce984ec0e))
 (label "VDIV" (at 133.35 53.34 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid d18f7c1a-0311-4e19-b889-1988091b87bc))
 (wire (pts (xy 133.35 53.34) (xy 139.7 53.34)) (stroke (width 0) (type default)) (uuid 67ff8d2a-a93f-4b77-a496-ee36605a02b9))
-(symbol (lib_id "Amplifier_Operational:OPA333xxDBV") (at 147.32 55.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid fc37de03-3b68-4004-96b8-4e780a114d2b) (property "Reference" "U3" (at 152.4 50.8 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "OPA388QDBVRQ1" (at 147.32 67.31 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "Package_TO_SOT_SMD:SOT-23-5" (at 147.32 55.88 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "https://www.ti.com/lit/gpn/OPA388-Q1" (at 147.32 55.88 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 147.32 55.88 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "MPN" "OPA388QDBVRQ1" (at 147.32 55.88 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid d44c045e-b97c-4c17-a9ec-a1ff09fcf2db)) (pin "2" (uuid b8b6a1ee-b749-4908-b246-97afea063bf4)) (pin "3" (uuid 0fed5122-37af-4ca2-858b-f8a0ad978966)) (pin "4" (uuid 9921c16d-bcbd-408c-b84c-bff06d10075f)) (pin "5" (uuid 350757ec-fcaa-436a-a350-412ecfad0068)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "U3") (unit 1)))))
+(symbol (lib_id "Amplifier_Operational:OPA333xxDBV") (at 147.32 55.88 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid fc37de03-3b68-4004-96b8-4e780a114d2b) (property "Reference" "U3" (at 152.4 50.8 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "OPA388QDBVRQ1" (at 147.32 67.31 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "StrainGauge:TI_DBV0005A_SOT-23-5" (at 147.32 55.88 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "https://www.ti.com/lit/gpn/OPA388-Q1" (at 147.32 55.88 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 147.32 55.88 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "MPN" "OPA388QDBVRQ1" (at 147.32 55.88 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid d44c045e-b97c-4c17-a9ec-a1ff09fcf2db)) (pin "2" (uuid b8b6a1ee-b749-4908-b246-97afea063bf4)) (pin "3" (uuid 0fed5122-37af-4ca2-858b-f8a0ad978966)) (pin "4" (uuid 9921c16d-bcbd-408c-b84c-bff06d10075f)) (pin "5" (uuid 350757ec-fcaa-436a-a350-412ecfad0068)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "U3") (unit 1)))))
 (symbol (lib_id "power:+3V3") (at 144.78 43.18 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid dcb57dbb-2e42-45e0-98cd-d3e1c05c2142) (property "Reference" "#PWR22" (at 148.59 41.91 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3V3" (at 148.59 44.45 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 144.78 43.18 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 144.78 43.18 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 144.78 43.18 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid d0d3ca3b-debe-45ea-9b12-de32c24194e4)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR22") (unit 1)))))
 (wire (pts (xy 144.78 43.18) (xy 144.78 48.26)) (stroke (width 0) (type default)) (uuid 49787f93-5bb6-4c0f-bc52-3e13effa7bbc))
 (junction (at 144.78 45.72) (diameter 0) (color 0 0 0 0) (uuid 26867f63-0fe4-4626-abaf-5a91b373ddc9))
@@ -2690,7 +2458,7 @@
 (wire (pts (xy 154.94 55.88) (xy 160.02 55.88)) (stroke (width 0) (type default)) (uuid c9f87917-8836-4ce7-af67-6b5026b42693))
 (label "VREF" (at 160.02 55.88 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 80f86b35-b546-45bf-a34e-5bb3c3d0ba92))
 (text "Connector EMI and ESD" (exclude_from_sim no) (at 187.96 38.1 0) (effects (font (size 1.8 1.8) (bold yes)) (justify left bottom)) (uuid 0e5f13d5-f98e-4d55-aaa0-b32e447a70e9))
-(symbol (lib_id "power:+5V") (at 190.5 46.99 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid e7a07307-ffaf-4510-8972-58a4c720129f) (property "Reference" "#PWR28" (at 194.31 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+5V" (at 194.31 48.26 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 190.5 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 190.5 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 190.5 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 9aadbdc6-ec54-49d7-8d5b-f56ee24574f9)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR28") (unit 1)))))
+(symbol (lib_id "power:+5V") (at 190.5 46.99 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid e7a07307-ffaf-4510-8972-58a4c720129f) (property "Reference" "#PWR28" (at 194.31 45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+5V" (at 186.69 44.45 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 190.5 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 190.5 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 190.5 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 9aadbdc6-ec54-49d7-8d5b-f56ee24574f9)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR28") (unit 1)))))
 (wire (pts (xy 190.5 46.99) (xy 205.74 46.99)) (stroke (width 0) (type default)) (uuid 3fe253a9-9219-4104-aec4-e48799753a06))
 (junction (at 198.12 46.99) (diameter 0) (color 0 0 0 0) (uuid 8bc31d80-f101-4a3c-b481-ed994dece9e8))
 (symbol (lib_id "Device:D_TVS") (at 198.12 50.8 90) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 24bcaa43-2948-446c-b646-37ee716c7361) (property "Reference" "D1" (at 195.58 49.53 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Value" "ESD 5.5V" (at 195.58 52.07 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property "Footprint" "StrainGauge:TVS_X1SON-2_DPY" (at 198.12 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 198.12 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 198.12 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "MPN" "TPD1E10B06QDPYRQ1" (at 198.12 50.8 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 31159c25-79de-4bcc-bc5e-db0c1ae63360)) (pin "2" (uuid a5fffd7a-1f9c-4e71-b30e-467d72dfddff)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "D1") (unit 1)))))
@@ -2709,12 +2477,33 @@
 (wire (pts (xy 165.1 119.38) (xy 165.1 121.92)) (stroke (width 0) (type default)) (uuid 791dcc9b-5980-44e9-a48e-8963ab581370))
 (wire (pts (xy 165.1 121.92) (xy 167.64 121.92)) (stroke (width 0) (type default)) (uuid d43b6ec6-eca1-49fd-9c89-2d8f5a7a44aa))
 (label "VREF" (at 167.64 121.92 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid bda6f2c1-6073-42d5-9988-aa5e9162e38c))
-(wire (pts (xy 78.74 58.42) (xy 76.2 58.42)) (stroke (width 0) (type default)) (uuid c6d2ca21-868b-42ce-8aee-733805028fe1))
 (wire (pts (xy 35.56 48.26) (xy 30.48 48.26)) (stroke (width 0) (type default)) (uuid 7e4206c8-1ea3-4be5-8db0-35ea3bfaae30))
 (label "VIN_J1" (at 30.48 48.26 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid 3bedbcef-1dfd-452b-9dcc-9073ab46bb61))
 (symbol (lib_id "power:PWR_FLAG") (at 193.04 46.99 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 9d73190b-efcb-49a0-8033-6ff81b45ddbc) (property "Reference" "#FLG03" (at 193.04 40.64 0) (show_name no) (do_not_autoplace no) (hide yes) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "PWR_FLAG" (at 193.04 43.18 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 193.04 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 193.04 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 193.04 46.99 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid 48079f1f-0b4d-45b4-9241-7d08037a6736)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#FLG03") (unit 1)))))
 (junction (at 193.04 46.99) (diameter 0) (color 0 0 0 0) (uuid 0cac4621-3553-4901-9b54-30d4959b61d6))
 (text "3.3 V regulator" (exclude_from_sim no) (at 58.42 38.1 0) (effects (font (size 1.8 1.8) (bold yes)) (justify left bottom)) (uuid d6e76064-b1a3-4e53-bf5b-2e354212ce58))
+(symbol (lib_id "power:+3V3") (at 149.86 111.76 0) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 57014fb6-3a31-40ac-9bd9-686b6b1dac76) (property "Reference" "#PWR30" (at 149.86 105.41 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Value" "+3V3" (at 149.86 107.95 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Footprint" "" (at 149.86 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "" (at 149.86 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 149.86 111.76 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid eb94d2b5-1ab3-48b7-b63c-6999e3ce5077)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "#PWR30") (unit 1)))))
+(wire (pts (xy 149.86 111.76) (xy 154.94 111.76)) (stroke (width 0) (type default)) (uuid 6d59c1ce-e105-482f-b573-7b7a4bb7e1a1))
+(symbol (lib_id "Device:R_Pack04_Split") (at 156.21 143.51 270) (unit 2) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid b96285ac-af1f-415d-9e38-6fbe97ef17c4) (property "Reference" "RN2" (at 156.21 140.97 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "499R/49k9 0.1%" (at 156.21 148.59 90) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Footprint" "StrainGauge:ACAS_0612" (at 177.8 115.57 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "https://www.vishay.com/doc?28770" (at 177.8 115.57 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 177.8 115.57 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "MPN" "ACASA4990S4992P1AT" (at 177.8 115.57 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "2" (uuid d98815fa-6615-4241-84b0-8ac9a48f5694)) (pin "7" (uuid ffd36145-c15e-4e48-ad88-b6527f177b19)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "RN2") (unit 2)))))
+(symbol (lib_id "Device:R_Pack04_Split") (at 168.91 143.51 90) (unit 3) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid c3429114-2005-42ba-a93c-f3cc71644ed3) (property "Reference" "RN2" (at 168.91 140.97 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "499R/49k9 0.1%" (at 168.91 148.59 90) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Footprint" "StrainGauge:ACAS_0612" (at 177.8 123.19 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "https://www.vishay.com/doc?28770" (at 177.8 123.19 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 177.8 123.19 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "MPN" "ACASA4990S4992P1AT" (at 177.8 123.19 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "3" (uuid dc88121a-7e5d-46c9-b239-e5a9ace202bf)) (pin "6" (uuid 296845ba-4c03-4223-883a-a98bb432a625)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "RN2") (unit 3)))))
+(symbol (lib_id "Device:R_Pack04_Split") (at 181.61 143.51 270) (unit 4) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 5bbfa10d-8e8d-41aa-9a0a-092777f18445) (property "Reference" "RN2" (at 181.61 140.97 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "499R/49k9 0.1%" (at 181.61 148.59 90) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Footprint" "StrainGauge:ACAS_0612" (at 177.8 130.81 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "https://www.vishay.com/doc?28770" (at 177.8 130.81 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 177.8 130.81 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "MPN" "ACASA4990S4992P1AT" (at 177.8 130.81 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "4" (uuid 58ec4e90-6283-4de8-9e73-e33b251ac289)) (pin "5" (uuid c237577d-e809-46b3-9453-354c08660d99)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "RN2") (unit 4)))))
+(symbol (lib_id "Device:R_Pack04_Split") (at 200.66 143.51 270) (unit 1) (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (uuid 473e26dd-83b5-4f5b-a7e0-ff2689693863) (property "Reference" "RN2" (at 200.66 140.97 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property "Value" "499R/49k9 0.1%" (at 200.66 148.59 90) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Footprint" "StrainGauge:ACAS_0612" (at 190.5 130.81 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Datasheet" "https://www.vishay.com/doc?28770" (at 190.5 130.81 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "Description" "" (at 190.5 130.81 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property "MPN" "ACASA4990S4992P1AT" (at 190.5 130.81 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (pin "1" (uuid da8eeac9-8a32-44b8-a54f-14eed15b5885)) (pin "8" (uuid 40b249b4-9f34-4728-858b-cb75b592286f)) (instances (project "StrainGauge" (path "/868f19cb-b342-446a-9562-22327f25c295" (reference "RN2") (unit 1)))))
+(wire (pts (xy 172.72 116.84) (xy 177.8 116.84)) (stroke (width 0) (type default)) (uuid 48968718-c557-47bc-89bd-d97e5ac73812))
+(label "VFG" (at 177.8 116.84 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid bd2f2e83-f844-4fea-ab75-0f497e1cd1fd))
+(label "VO" (at 175.26 111.76 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid d50dbc12-e42d-428f-8d7a-f7d16a862b09))
+(text "Gain network" (exclude_from_sim no) (at 146.05 133.35 0) (effects (font (size 1.8 1.8) (bold yes)) (justify left bottom)) (uuid 30a0c36d-5e46-4fbc-bef9-84a11ba0704c))
+(label "VO" (at 152.4 143.51 180) (effects (font (size 1.27 1.27)) (justify right bottom)) (uuid 0d642fbd-8a8e-4c68-8e93-5280aedf9a79))
+(label "VFG" (at 173.355 143.51 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 3cf711fa-5268-4159-8020-3bb1db437c89))
+(label "VREF" (at 185.42 143.51 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid fe6591be-94e7-43c3-8225-e2ab5c926218))
+(no_connect (at 196.85 143.51) (uuid 1c27e76b-c54e-46cf-b31f-be9848a813d9))
+(no_connect (at 204.47 143.51) (uuid 6d2ecd08-14de-477b-90a4-ec4db5a48856))
+(text "49k9" (exclude_from_sim no) (at 156.21 146.04999999999998 0) (effects (font (size 1.27 1.27))) (uuid 29b860a9-4ba1-47aa-88f9-1da3e7910c32))
+(text "49k9" (exclude_from_sim no) (at 168.91 146.04999999999998 0) (effects (font (size 1.27 1.27))) (uuid 7794a96d-70b8-4894-984f-afda1a14fef1))
+(text "499R" (exclude_from_sim no) (at 181.61 146.04999999999998 0) (effects (font (size 1.27 1.27))) (uuid 602c01c1-5b8f-4306-b04b-427a81dd55ef))
+(text "unused" (exclude_from_sim no) (at 200.66 146.04999999999998 0) (effects (font (size 1.27 1.27))) (uuid 79b28271-3597-4f44-a4a3-d2cdf2c2ac21))
+(text "One array, so RF and RG track. RF = 49k9 + 49k9, RG = 499R.\nGain = 1 + RF/RG = 201." (exclude_from_sim no) (at 146.05 152.4 0) (effects (font (size 1.27 1.27)) (justify left bottom)) (uuid 329d2824-fe8f-43e4-a945-833d26b50fdc))
+(wire (pts (xy 160.02 143.51) (xy 165.1 143.51)) (stroke (width 0) (type default)) (uuid 1c7885e0-f4ec-408f-9c98-aac6985665d7))
+(wire (pts (xy 172.72 143.51) (xy 177.8 143.51)) (stroke (width 0) (type default)) (uuid dfa99391-ad06-4762-846f-814ab75ad25a))
 (sheet_instances (path "/" (page "1")))
 (embedded_fonts no)
 )
