@@ -1,14 +1,14 @@
 # Strain Gauge Amplifier
 
-A very small analog amplifier board for a full-bridge strain gauge on a carbon rod. It powers the bridge, amplifies the tiny bridge signal by about 201, filters it, and sends one analog voltage to an ADC.
+A very small analog amplifier board for a full-bridge strain gauge on a carbon rod. It powers the bridge, amplifies the tiny bridge signal by about 151, filters it, and sends one analog voltage to an ADC.
 
 | | |
 |---|---|
 | Board size | 18.35 × 5.0 mm, 0.8 mm thick, 2 layers |
 | Supply | 5 V in, 3.3 V on board |
-| Output | Analog, 1.65 V at zero strain |
-| Sensitivity | About 0.86 mV/µε at the output |
-| Usable range | About ±1850 µε |
+| Output | Analog, 0.825 V at zero strain |
+| Sensitivity | About 0.649 mV/µε at the output |
+| Usable range | About 3730 µε compression, 1190 µε extension |
 | Bandwidth | About 480 Hz |
 | Bridge | 350 Ω full bridge, 3.3 V excitation |
 | Design tool | KiCad 10 |
@@ -36,9 +36,9 @@ flowchart LR
     A[5 V from J1] --> B[FB1 and D1]
     B --> C[U1 3.3 V regulator]
     C --> D[Strain gauge bridge]
-    C --> E[RN1 and U3 make 1.65 V VREF]
+    C --> E[RN1 and U3 make 0.825 V VREF]
     D --> F[Input filter]
-    F --> G[U2 amplifier, gain 201]
+    F --> G[U2 amplifier, gain 151]
     E --> G
     G --> H[R4 and C5 output filter]
     H --> I[FB2 and D2]
@@ -59,7 +59,7 @@ U1 (TPS7A2033) makes the 3.3 V rail. It powers the amplifier and the bridge, and
 
 ### 3. Mid-supply reference
 
-RN1 divides 3.3 V in half, and U3 buffers it to make a low-impedance 1.65 V **VREF**. This sets the amplifier's zero point, so the output can swing both ways for tension and compression on a single supply.
+RN1 is a 10k/30k pair that divides 3.3 V by four, and U3 buffers it to make a low-impedance 0.825 V **VREF**. This sets the amplifier's zero point. It sits low because the expected load is lopsided: 3000 µε compression and 300 µε extension. Compression drives the output up, and extension drives it down.
 
 ### 4. Input filter
 
@@ -74,10 +74,10 @@ U2 (MCP6N16-100) is a zero-drift instrumentation amplifier. Zero drift means it 
 Two external resistors set the gain:
 
 ```
-Gain = 1 + R2 / R1 = 1 + 100k / 499 = 201.4
+Gain = 1 + R2 / R1 = 1 + 100k / 665 = 151.4
 ```
 
-The gain depends on the **ratio** of R2 to R1, not their absolute values. They use the same ±10 ppm/K part family and sit next to each other, so their ratio stays stable as temperature changes.
+The gain depends on the **ratio** of R2 to R1, not their absolute values. R1 is rated ±5 ppm/K and R2 ±10 ppm/K. They come from the same Susumu RG1005 range and sit next to each other, so their ratio stays stable as temperature changes.
 
 The output is:
 
@@ -98,8 +98,8 @@ Use the labels printed on the board, because the J2 pad order is not the same as
 | Label | Pin | Connects to |
 |---|---|---|
 | EXC+ | 1 | Bridge top, 3.3 V |
-| SIG− | 3 | Junction of SG1 and SG2 |
-| SIG+ | 2 | Junction of SG4 and SG3 |
+| SIG− | 3 | Junction of SG4 and SG3 |
+| SIG+ | 2 | Junction of SG1 and SG2 |
 | EXC− | 4 | Bridge bottom, GND |
 
 **J1, cable to the ADC (top to bottom on the board):**
@@ -114,10 +114,10 @@ The `OUT 5V GND` silk label is on the back of the board near J2, not beside J1. 
 
 ## Reading the output
 
-Convert the voltage to strain with:
+Convert the voltage to strain with the line below, where compression is positive:
 
 ```
-strain (µε) = (VOUT − 1.65 V) / 0.00086 V per µε
+strain (µε) = (VOUT − 0.825 V) / 0.000649 V per µε
 ```
 
 Treat this as a starting point. For real measurements, calibrate the board on the rod with known loads, and measure the zero point at no load.
@@ -126,7 +126,7 @@ Both the zero point and the sensitivity follow the 3.3 V rail, and the ADC canno
 
 ## Known limitations
 
-- **3.3 V rail drift:** U1 is rated at ±1.5% over temperature. That could move the zero by up to about 25 mV, or roughly 29 µε. This is the largest temperature error in the design.
+- **3.3 V rail drift:** U1 is rated at ±1.5% over temperature. That could move the zero by up to about 12 mV, or roughly 19 µε. This is the largest temperature error in the design.
 - **Gauge wires:** J2 has no ESD diodes and no common-mode filter. EXC+ connects directly to the 3.3 V rail.
 - **Chopping frequency:** U2 chops at 25 kHz. Strong interference near that frequency, such as from a motor inverter, could mix down into the signal band.
 - **ESD diode position:** D1 and D2 sit after the ferrites, and D2 is about 9 mm from J1. Normally they would sit right at the connector.
@@ -135,7 +135,9 @@ Both the zero point and the sensitivity follow the 3.3 V rail, and the ADC canno
 ## Before ordering
 
 - [ ] Confirm R2's AEC-Q200 status and tempco in the Susumu data sheet.
-- [ ] Check stock and lead time for R1 and R2.
+- [ ] Check stock and lead time for R1 and R2. R1 was listed as not stocked at Digi-Key, with a 22-week lead time.
+- [ ] Confirm RN1 can be bought. ACASN1002U3002P1AT follows the Vishay part number scheme, but no distributor listing was found. ACASN1002S3002P1AT is listed and has wider ±15 ppm/K tracking.
+- [ ] Tell the assembler that RN1 is now polarized. Pin 1 is the GND pad and the 10k side, marked by a dot on the back silkscreen. Fitted backwards, VREF is 2.475 V.
 - [ ] Compare U2's land pattern with Microchip's MSOP-8 package drawing. It was adapted from a VSSOP footprint.
 - [ ] Check spacing around U1 with your assembler. Parts are close, and the 5 V link beside FB1 is at the 0.127 mm minimum track width.
 - [ ] Review the vias at (115.0, 102.72) and (115.0, 104.48), which sit in or at the edge of pads.
@@ -149,9 +151,9 @@ The full list with manufacturers, ratings, and sources is in [StrainGauge_BOM.cs
 | U1 | TI TPS7A2033PDBVR | 3.3 V regulator |
 | U2 | Microchip MCP6N16-100E/MS | Zero-drift instrumentation amplifier |
 | U3 | TI OPA388QDBVRQ1 | VREF buffer |
-| R1 | Susumu RG1005N-4990-W-T1, 499 Ω | Gain setting |
+| R1 | Susumu RG1005V-6650-P-T1, 665 Ω | Gain setting |
 | R2 | Susumu RG1005N-104-W-T1, 100 kΩ | Gain setting |
-| RN1 | Vishay ACASN1002U1002P1AT, 10k/10k | VREF divider |
+| RN1 | Vishay ACASN1002U3002P1AT, 10k/30k | VREF divider |
 | R4 | 1 kΩ | Output filter |
 | R5, R6 | 100 Ω | Input filter |
 | C1, C2 | 1 µF | Regulator input and output |

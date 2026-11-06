@@ -3158,7 +3158,7 @@
 				)
 			)
 		)
-		(property "Value" "10k 0.1%"
+		(property "Value" "10k/30k"
 			(at 0 1.3 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -3192,7 +3192,7 @@
 				)
 			)
 		)
-		(property "MPN" "ACASN1002U1002P1AT"
+		(property "MPN" "ACASN1002U3002P1AT"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -3230,6 +3230,28 @@
 			(fill no)
 			(layer "B.Fab")
 			(uuid "56e588e1-2a8e-45a1-949c-330e955d56b1")
+		)
+		(fp_circle
+			(center -0.5 1.05)
+			(end -0.4 1.05)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.SilkS")
+			(uuid "fa7d901a-9cd0-4027-b503-3972c0e7e9c9")
+		)
+		(fp_circle
+			(center -0.5 0.55)
+			(end -0.4 0.55)
+			(stroke
+				(width 0)
+				(type solid)
+			)
+			(fill yes)
+			(layer "B.Fab")
+			(uuid "91702866-2a1f-458a-a208-d3c7826b8c7c")
 		)
 		(pad "1" smd roundrect
 			(at -0.8 0.5)
@@ -3294,7 +3316,7 @@
 				)
 			)
 		)
-		(property "Value" "499R 0.05%"
+		(property "Value" "665R 0.02%"
 			(at 0 1.17 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -3340,7 +3362,7 @@
 				)
 			)
 		)
-		(property "MPN" "RG1005N-4990-W-T1"
+		(property "MPN" "RG1005V-6650-P-T1"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
